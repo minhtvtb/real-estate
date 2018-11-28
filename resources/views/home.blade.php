@@ -191,20 +191,4 @@
             </div>
         </div>
     </section>
-    <!-- Start gallery -->
-    <section>
-        <div class="my-container">
-            <div class="row d-flex justify-content-center">
-                <div class="menu-content pb-70 col-lg-8">
-                    <div class="title text-center">
-                        <video id="video1">
-                            <source src="{{ asset('img/video.mp4') }}">
-                        </video>
-                        <button id="bnt1" onclick="playPause()">Play/Pause</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End gallery -->
 @endsection
