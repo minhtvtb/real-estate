@@ -18,7 +18,7 @@
     </section>
     <!-- End banner Area -->
     <!-- Start quote Area -->
-    <section class="quote-area pt-100">
+    <section class="quote-area section-gap">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 quote-left">
@@ -28,8 +28,8 @@
                         to the <span>happiness</span>.
                     </h1>
                 </div>
-                <div class="my-col-lg-6 quote-right">
-                    <img src="img/t1.jpg" style="height: 100px" width="600px">
+                <div class="col-lg-6 quote-right">
+                    <img src="{{ asset('img/t1.jpg') }}" style="height: 100px" width="600px">
                 </div>
             </div>
         </div>

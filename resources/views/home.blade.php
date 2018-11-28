@@ -3,22 +3,32 @@
     <!-- start banner  -->
     <section class="banner-area relative" id="home">
         <div class="overlay overlay-bg"></div>
-        <div class="my-container">
-            <div class="my-row fullscreen my-d-flex align-items-center justify-content-center"></div>
+        <div class="container">
+            <div class="row fullscreen d-flex align-items-center justify-content-center">
+                <div class="banner-content col-lg-8">
+                    <h6 class="text-white">Giới thiệu tên công ty</h6>
+                    <h1 class="text-white">
+                        Giới thiệu tên công ty
+                    </h1>
+                    <p class="pt-20 pb-20 text-white">
+                        demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     <!-- End banner  -->
     <section class="quote-area section-gap">
         <div class="container">
             <div class="row">
-                <div class="my-col-lg-6 quote-left">
+                <div class="col-lg-6 quote-left">
                     <h1>
                         <span>House</span> gives warmth to the people, <br>
                         wings to the <span>peace</span>, flight <br>
                         to the <span>happiness</span>.
                     </h1>
                 </div>
-                <div class="my-col-lg-6 quote-right">
+                <div class="col-lg-6 quote-right">
                     <img src="{{ asset('img/t1.jpg') }}" style="height: 100px" width="600px">
                 </div>
             </div>
@@ -26,7 +36,7 @@
     </section>
     <!-- Start upcoming-event  -->
     <section class="upcoming-event-area section-gap" id="events">
-        <div class="my-container">
+        <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-60 col-lg-10">
                     <div class="title text-center">
@@ -36,7 +46,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="my-col-lg-6 event-left">
+                <div class="col-lg-6 event-left">
                     <div class="single-events">
                         <img class="img-fluid" src="{{ asset('img/u1.jpg') }}" alt=""style="width: 530px">
                         <a href="#"><h4>Sunshine Wonder Villas</h4></a>
@@ -58,7 +68,7 @@
                         <a href="#" class="primary-btn text-uppercase">Thông tin chi tiết</a>
                     </div>
                 </div>
-                <div class="my-col-lg-6 event-right">
+                <div class="col-lg-6 event-right">
                     <div class="single-events">
                         <a href="#"><h4>Sunshine Wonder Villas</h4></a>
                         <h6><span>24/10/2018</span> tại Hà Nội</h6>

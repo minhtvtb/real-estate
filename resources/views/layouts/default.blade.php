@@ -7,28 +7,29 @@
     <title>YGM Group</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-    <!--CSS-->
-    <link rel="stylesheet" href="{{ asset('css/linearicons.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/template.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/nice-select.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/button-video.css') }}">
+    <!--
+    CSS
+    ============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <header id="header" id="home">
-    <div class="my-container header-top">
-        <div class="my-row">
-            <div class="top-head-left">
+    <div class="container header-top">
+        <div class="row">
+            <div class="col-6 top-head-left">
                 <ul>
                     <li><a href="#">Tham khảo</a></li>
                     <li><a href="#">Liên hệ</a></li>
                 </ul>
             </div>
-            <div class="my-col top-head-right">
+            <div class="col-6 top-head-right">
                 <ul>
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -38,8 +39,8 @@
         </div>
     </div>
     <hr>
-    <div class="my-container">
-        <div class="my-row about-link my-d-flex">
+    <div class="container">
+        <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
                 <a href="/">
                     <img src="{{asset('img/logo.png')}}" alt="" title="" style="height: 80px"/>
@@ -63,7 +64,7 @@
 
 <!-- start footer -->
 <footer class="footer-area section-gap">
-    <div class="my-container">
+    <div class="container">
         <div class="row">
             <div class="col-lg-5 col-md-6 col-sm-6">
                 <div class="single-footer-widget">
@@ -85,7 +86,9 @@
                     <p>Luôn cập nhật tin tức mới nhất</p>
                     <div class="" id="mc_embed_signup">
                         <form target="_blank" novalidate="true" action="" method="get" class="form-inline">
-                            <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+                            <input class="form-control" name="EMAIL" placeholder="Enter Email"
+                                   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
+                                   required="" type="email">
                             <button class="click-btn btn btn-default"><span class="lnr lnr-arrow-right"></span></button>
                             <div style="position: absolute; left: -5000px;">
                                 <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
@@ -112,29 +115,21 @@
     </div>
 </footer>
 <!-- End footer -->
-<script>
-  let myVideo = document.getElementById("video1");
-  function playPause() {
-    if(myVideo.paused){
-      myVideo.play();
-    }else {
-      myVideo.pause();
-    }
-  }
-</script>
-<script src="{{ asset('js/vendor/jquery-2.2.4.min.js') }}"></script>
-<script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js') }}"></script>
-<script src="{{ asset('js/easing.min.js') }}"></script>
-<script src="{{ asset('js/hoverIntent.js') }}"></script>
-<script src="{{ asset('js/superfish.js') }}"></script>
-<script src="{{ asset('js/jquery.ajaxchimp.min.js') }}"></script>
-<script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
-<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-<script src="{{ asset('js/imagesloaded.pkgd.min.js') }}"></script>
-<script src="{{ asset('js/justified.min.js') }}"></script>
-<script src="{{ asset('js/jquery.sticky.js') }}"></script>
-<script src="{{ asset('js/jquery.nice-select.min.js') }}"></script>
-<script src="{{ asset('js/parallax.min.js') }}"></script>
-<script src="{{ asset('js/mail-script.js') }}"></script>
-<script src="{{ asset('js/main.js') }}"></script>
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+<script src="js/easing.min.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/justified.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/main.js"></script>
 </body>
