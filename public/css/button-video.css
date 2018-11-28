@@ -1,0 +1,17 @@
+#bnt1{
+    margin-right: 2px;
+    margin-left: -30px;
+    text-align: center;
+    border: black solid 2px;
+    border-radius: 10px;
+    color: black;
+    font-style: oblique;
+    font-family: "Sitka Banner";
+    font-size: 18px;
+    margin-top: 20px;
+}
+#video1{
+    margin-top: 20px;
+    margin-left: -80px;
+    width: 900px;
+}
