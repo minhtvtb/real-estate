@@ -44,8 +44,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-8 post-list blog-post-list">
                     <div class="single-post">
                         <img class="img-fluid" src="img/blog/p2.jpg" alt="">
                         <ul class="tags">
@@ -83,8 +81,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-8 post-list blog-post-list">
                     <div class="single-post">
                         <img class="img-fluid" src="img/blog/p3.jpg" alt="">
                         <ul class="tags">
@@ -122,8 +118,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-8 post-list blog-post-list">
                     <div class="single-post">
                         <img class="img-fluid" src="img/blog/p4.jpg" alt="">
                         <ul class="tags">
