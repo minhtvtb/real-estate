@@ -14,9 +14,15 @@
 Route::get('/', function () {
     return view('home');
 })->name('home');
-Route::get('/about', function (){
+
+Route::get('/gioi-thieu', function (){
     return view('about');
 })->name('about');
-Route::get('/price', function (){
+
+Route::get('/du-an', function (){
     return view('price');
-})->name('price');
+})->name('projects');
+
+Route::get('/ygm-tv', function (){
+    return view('blog');
+})->name('blog');

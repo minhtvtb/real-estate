@@ -6,7 +6,11 @@
         <div class="container">
             <div class="row fullscreen d-flex align-items-center justify-content-center">
                 <div class="banner-content col-lg-8">
-                    <h6 class="text-white">Giới thiệu tên công ty</h6>
+                    <div id="logo">
+                        <a href="/">
+                            <img src="{{asset('img/logo.png')}}" alt="" title="" style="height: 250px"/>
+                        </a>
+                    </div>
                     <h1 class="text-white">
                         Giới thiệu tên công ty
                     </h1>

@@ -43,17 +43,24 @@
         <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
                 <a href="/">
-                    <img src="{{asset('img/logo.png')}}" alt="" title="" style="height: 80px"/>
+                    <img src="{{asset('img/logo.png')}}" alt="" title="" style="height: 100px; display: none"/>
                 </a>
             </div>
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
                     <li class="menu-active"><a href="{{ route('home') }}">Trang chủ</a></li>
-                    <li><a href="{{ route('about') }}">Thông tin</a></li>
-                    <li><a href="#">Bộ sưu tập</a></li>
-                    <li><a href="#">Dự án</a></li>
-                    <li><a href="{{ route('price') }}">Chi phí</a></li>
-                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="{{ route('about') }}">Giới thiệu</a></li>
+                    <li><a href="{{ route('projects') }}">Dự án</a></li>
+                    <li><a href="#">Đối tác</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="{{ route('blog') }}">YGM TV</a></li>
+                    <li class="menu-has-children"><a href="#">Liên Hệ</a>
+                        <ul>
+                            <li><a href="#">Tuyển dụng</a></li>
+                            <li><a href="#">Thông tin nhân sự</a></li>
+                            <li><a href="#">Thông tin liên lạc</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav><!-- #nav-menu-container -->
         </div>

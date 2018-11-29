@@ -1,27 +1,13 @@
 @extends('layouts.default')
 @section('content')
     <!-- start banner Area -->
-    <section class="banner-area relative" id="home">
-        <div class="overlay overlay-bg"></div>
-        <div class="container">
-            <div class="row d-flex align-items-center justify-content-center">
-                <div class="about-content col-lg-12">
-                    <h1 class="text-white">Chi phí</h1>
-                    <p class="text-white link-nav">
-                        <a href="{{ route('home') }}">Trang chủ </a>
-                        <span class="lnr lnr-arrow-right"></span>
-                        <a href="{{ route('price') }}"> Chi phí</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('partitions.banner', ['pageTitle' => 'Dự án', 'routeName' => 'projects'])
     <!-- End banner Area -->
     <!-- Start upcoming-exibition Area -->
     <section class="upcoming-exibition-area section-gap">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="menu-content pb-70 col-lg-8">
+                <div class="menu-content pb-70 col-lg-8">j
                     <div class="title text-center">
                         <h1 class="mb-10">Các sự kiện mở bán dự án</h1>
                         <p>Cuộc sống đem lại rất nhiều điều kì diệu, hãy tận hưởng và khám phá!</p>
