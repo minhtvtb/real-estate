@@ -1,5 +1,8 @@
 @extends('layouts.default')
 @section('content')
+    <!-- start banner Area -->
+    @include('partitions.banner', ['pageTitle' => 'YGM TV', 'routeName' => 'blog'])
+    <!-- End banner Area -->
     <section class="blog-posts-area section-gap">
         <div class="container">
             <div class="row">
