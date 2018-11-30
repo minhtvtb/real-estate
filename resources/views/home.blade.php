@@ -2,20 +2,26 @@
 @section('content')
     <!-- start banner  -->
     <section class="banner-area relative" id="home">
-        <div class="overlay overlay-bg"></div>
+        <div class="overlay overlay-bg">
+            <div class="banner-gradient1 aos-init aos-animate logo-pc" data-aos="fade-down-right">
+                <a href="/">
+                    <img src="{{asset('img/logo.png')}}" alt="" title="" style="height: 120px"/>
+                </a>
+            </div>
+        </div>
         <div class="container">
             <div class="row fullscreen d-flex align-items-center justify-content-center">
                 <div class="banner-content col-lg-8">
-                    <div id="logo">
+                    <div id="logo" class="logo-mobile">
                         <a href="/">
                             <img src="{{asset('img/logo.png')}}" alt="" title="" style="height: 250px"/>
                         </a>
                     </div>
                     <h1 class="text-white">
-                        Giới thiệu tên công ty
+                        YGM Group
                     </h1>
                     <p class="pt-20 pb-20 text-white">
-                        demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo
+                        Nơi niềm tin tạo dựng
                     </p>
                 </div>
             </div>
@@ -32,7 +38,7 @@
                         to the <span>happiness</span>.
                     </h1>
                 </div>
-                <div class="col-lg-6 quote-right">
+                <div id="image-quote" class="col-lg-6 quote-right">
                     <img src="{{ asset('img/t1.jpg') }}" style="height: 100px" width="600px">
                 </div>
             </div>
@@ -104,7 +110,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-70 col-lg-8">
                     <div class="title text-center">
-                        <h1 class="mb-10">Blog bài viết về blog</h1>
+                        <h1 class="mb-10">Blog YGM</h1>
                         <p>Sunshine Wonder Villas với view sân golf thoáng đãng, nội thất độc bản xa xỷ, hệ thống giao thông ngầm hiện đại, tiện ích trường học hoàng gia.</p>
                     </div>
                 </div>

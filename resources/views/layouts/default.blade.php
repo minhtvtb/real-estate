@@ -24,7 +24,7 @@
     <div class="container header-top">
         <div class="row">
             <div class="col-6 top-head-left">
-                <ul>
+                <ul class="menu-right">
                     <li><a href="#">Tham khảo</a></li>
                     <li><a href="#">Liên hệ</a></li>
                 </ul>

@@ -162,6 +162,7 @@ $(document).ready(function () {
     var logoImage = $('#logo').find('img');
     var headerTop = $('div.header-top');
     var header = $('#header');
+    var logoPc = $('div.banner-gradient1');
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -174,13 +175,21 @@ $(document).ready(function () {
             header.removeClass('header-scrolled');
 
         }
-        if ($(this).scrollTop() > window_height) {
-            header.find('hr').hide();
-            headerTop.hide();
-        }
-        else {
-            header.find('hr').show();
-            headerTop.show();
+        if (window_width > 500) {
+            if ($(this).scrollTop() > window_height) {
+                header.find('hr').hide();
+                headerTop.hide();
+            }
+            else {
+                header.find('hr').show();
+                headerTop.show();
+            }
+
+            if ($(this).scrollTop() > 100) {
+                logoPc.hide();
+            } else {
+                logoPc.show();
+            }
         }
     });
 
