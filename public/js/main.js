@@ -1,6 +1,10 @@
 $(document).ready(function () {
     'use strict';
 
+    AOS.init({
+        easing: 'ease-in-out-sine'
+    });
+
     var window_width = $(window).width(),
         window_height = window.innerHeight,
         header_height = $('.default-header').height(),
@@ -13,7 +17,6 @@ $(document).ready(function () {
     if (document.getElementById('default-select')) {
         $('select').niceSelect();
     }
-    ;
 
     $('.img-pop-up').magnificPopup({
         type: 'image',
@@ -169,11 +172,11 @@ $(document).ready(function () {
             header.addClass('header-scrolled');
             logoImage.show();
             logoImage.height(60);
+            logoPc.hide();
         }
         else {
             logoImage.hide();
             header.removeClass('header-scrolled');
-
         }
         if (window_width > 500) {
             if ($(this).scrollTop() > window_height) {
@@ -184,10 +187,7 @@ $(document).ready(function () {
                 header.find('hr').show();
                 headerTop.show();
             }
-
-            if ($(this).scrollTop() > 100) {
-                logoPc.hide();
-            } else {
+            if ($(this).scrollTop() < 100){
                 logoPc.show();
             }
         }

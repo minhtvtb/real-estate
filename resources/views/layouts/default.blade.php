@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/main.css">
+    {{--<link rel="stylesheet" href="css/aos.css">--}}
 </head>
 <body>
 <header id="header" id="home">
@@ -77,30 +80,29 @@
                 <div class="single-footer-widget">
                     <h6>Về chúng tôi</h6>
                     <p>
-                        Giới thiệu ngắn gọn về công ty ...
+                        Là thành viên của HÀ NỘI LAND đã hoạt động trong lĩnh vực bất động sản trên 10 năm, chúng tôi tự tin cung cấp cho bạn dịch vụ tốt nhất và sự yên tâm tuyệt đối.
                     </p>
                     <p class="footer-text">
-                        Copyright &copy;<script>document.write(new Date().getFullYear())</script>
-                        All rights reserved | This page is made with
-                        <i class="fa fa-heart-o" aria-hidden="true"></i> by
-                        <a href="https://nguyenthuthao.com.vn" target="_blank">Trần Văn Minh</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | YGM <i class="fa fa-heart-o" aria-hidden="true"></i> <br> <a href="#" target="_blank">Nơi niềm tin tạo dựng</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
             </div>
             <div class="col-lg-5  col-md-6 col-sm-6">
                 <div class="single-footer-widget">
-                    <h6>Nhận Tin mới</h6>
-                    <p>Luôn cập nhật tin tức mới nhất</p>
+                    <h6>Nhận tin từ chúng tôi</h6>
+                    <p>Cập nhật tin tức bất động sản mới nhất</p>
                     <div class="" id="mc_embed_signup">
-                        <form target="_blank" novalidate="true" action="" method="get" class="form-inline">
-                            <input class="form-control" name="EMAIL" placeholder="Enter Email"
-                                   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
-                                   required="" type="email">
-                            <button class="click-btn btn btn-default"><span class="lnr lnr-arrow-right"></span></button>
-                            <div style="position: absolute; left: -5000px;">
-                                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-                            </div>
-
+                        <form class="form-inline">
+                            <input class="form-control" name="mobile" placeholder="Nhập số điện thoại" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nhập số điện thoại'" required="" type="number">
+                            <button class="click-btn btn btn-default" id="btn-submit-email">
+                                <span class="lnr lnr-arrow-right"></span>
+                            </button>
+                            <input class="form-control" name="email" placeholder="Nhập email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nhập email'" required="" type="email">
+                            <button class="click-btn btn btn-default" id="btn-submit-email">
+                                <span class="lnr lnr-arrow-right"></span>
+                            </button>
                             <div class="info"></div>
                         </form>
                     </div>
@@ -108,8 +110,8 @@
             </div>
             <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
                 <div class="single-footer-widget">
-                    <h6>Liên hệ với tôi</h6>
-                    <p>Mạng xã hội</p>
+                    <h6>Follow Us</h6>
+                    <p>Let us be social</p>
                     <div class="footer-social d-flex align-items-center">
                         <a href="#"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-twitter"></i></a>
@@ -138,5 +140,7 @@
 <script src="js/jquery.nice-select.min.js"></script>
 <script src="js/parallax.min.js"></script>
 <script src="js/mail-script.js"></script>
+{{--<script src="js/aos.js"></script>--}}
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="js/main.js"></script>
 </body>
