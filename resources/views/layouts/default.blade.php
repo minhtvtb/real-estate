@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('slick/slick.css') }}"/>
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    @yield('style')
     {{--<link rel="stylesheet" href="css/aos.css">--}}
 </head>
 <body>
@@ -144,4 +145,5 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="{{ asset('slick/slick.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
+@yield('script')
 </body>

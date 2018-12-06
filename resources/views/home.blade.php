@@ -1,4 +1,8 @@
 @extends('layouts.default')
+@section('style')
+    <link rel="stylesheet" href="{{ asset('css/frontend/home.css') }}">
+@endsection
+
 @section('content')
     <!-- start banner  -->
     <section class="banner-area relative" id="home">
@@ -281,4 +285,6 @@
         </div>
     </section>
     <!-- End exibition Area -->
+@endsection
+@section('script')
 @endsection
