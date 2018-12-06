@@ -165,10 +165,60 @@
             </div>
         </div>
     </section>
+    <section class="section-gap customer-logo-wrap">
+        <div class="row d-flex justify-content-center" data-aos="zoom-out">
+            <div class="menu-content pb-60 col-lg-10">
+                <div class="title text-center">
+                    <h1 class="mb-10">Đối tác chiến lược</h1>
+                </div>
+            </div>
+        </div>
+        <div class="customer-logo">
+            <div class="thumb">
+                <img alt="Dân trí" class="" src="http://dankogroup.com.vn/pic/QA/Dan_tri_l_636783940366013828.png">
+            </div>
+            <div class="thumb">
+                <img alt="Capitaland" class="" src="http://dankogroup.com.vn/pic/QA/logo-doit_636751917945941287_HasThumb.png">
+            </div>
+            <div class="thumb">
+                <img alt="VTV" class="" src="http://dankogroup.com.vn/pic/QA/VTV_201_636783940459229160.png">
+            </div>
+            <div class="thumb">
+                <img alt="FLC Group" class="" src="http://dankogroup.com.vn/pic/QA/logo-doit_636751917680227737_HasThumb.png">
+            </div>
+            <div class="thumb">
+                <img alt="ICID Group" class="" src="http://dankogroup.com.vn/pic/QA/logo-doit_636751917573877848_HasThumb.png">
+            </div>
+            <div class="thumb">
+                <img alt="Vietcombank" class="" src="http://dankogroup.com.vn/pic/QA/logo-doit_636751917389591651_HasThumb.png">
+            </div>
+            <div class="thumb">
+                <img alt="Vinh Hạnh Group" class="" src="http://dankogroup.com.vn/pic/QA/logo-doit_636751917165460572_HasThumb.png">
+            </div>
+            <div class="thumb">
+                <img alt="Ngân hàng Phương Đông" class="" src="http://dankogroup.com.vn/pic/QA/logo-doit_636751917038814660_HasThumb.png">
+            </div>
+            <div class="thumb">
+                <img alt="Vin Group" class="" src="http://dankogroup.com.vn/pic/QA/vingroup-_636783246130875849.png">
+            </div>
+            <div class="thumb">
+                <img alt="Holdings VietNam" class="" src="http://dankogroup.com.vn/pic/QA/xnew-logo_636783247395788198.png">
+            </div>
+            <div class="thumb">
+                <img alt="MB Bank" class="" src="http://dankogroup.com.vn/pic/QA/mb_636783942021198499.png">
+            </div>
+            <div class="thumb">
+                <img alt="Eurowindow Group" class="" src="http://dankogroup.com.vn/pic/QA/logo-euro_636783940787927960.png">
+            </div>
+            <div class="thumb">
+                <img alt="Mipec" class="" src="http://dankogroup.com.vn/pic/QA/mipe_636783940882533371.png">
+            </div>
+        </div>
+    </section>
     <!-- Start exibition Area -->
     <section class="exibition-area section-gap" id="exhibitions">
         <div class="container">
-            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+            <div class="row d-flex justify-content-center" data-aos="flip-up">
                 <div class="menu-content pb-60 col-lg-10">
                     <div class="title text-center">
                         <h1 class="mb-10">Về nhân sự của chúng tôi</h1>

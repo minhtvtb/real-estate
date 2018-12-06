@@ -210,9 +210,18 @@ $(document).ready(function () {
 
         },
     });
+    //slick
+    $('.customer-logo').slick({
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: false,
+        prevArrow: false,
+        nextArrow: false
+    });
 
     //  Gallery
-
     var parameters = {
         gridContainer: '#grid-container',
         gridItems: '.grid-item',
@@ -227,5 +236,4 @@ $(document).ready(function () {
     $(document).ready(function () {
         $('#mc_embed_signup').find('form').ajaxChimp();
     });
-
 });

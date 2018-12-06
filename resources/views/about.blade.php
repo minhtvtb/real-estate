@@ -3,29 +3,11 @@
     <!-- start banner Area -->
     @include('partitions.banner', ['pageTitle' => 'Giới thiệu', 'routeName' => 'about'])
     <!-- End banner Area -->
-    <!-- Start quote Area -->
-    <section class="quote-area section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 quote-left">
-                    <h1>
-                        <span>House</span> gives warmth to the people, <br>
-                        wings to the <span>peace</span>, flight <br>
-                        to the <span>happiness</span>.
-                    </h1>
-                </div>
-                <div class="col-lg-6 quote-right">
-                    <img src="{{ asset('img/t1.jpg') }}" style="height: 100px" width="600px">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End quote Area -->
     <!-- Start service Area -->
     <section class="service-area section-gap" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="flip-left">
                     <div class="single-service">
                         <span class="lnr lnr-clock"></span>
                         <h4>Thời gian làm việc</h4>
@@ -37,7 +19,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="flip-right">
                     <div class="single-service">
                         <span class="lnr lnr-rocket"></span>
                         <h4>Thời gian mở bán dự án</h4>
@@ -49,7 +31,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="flip-left">
                     <div class="single-service">
                         <span class="lnr lnr-briefcase"></span>
                         <h4>Thời gian sự kiện dự án</h4>
@@ -68,7 +50,7 @@
     <!-- Start about info Area -->
     <section class="section-gap info-area" id="about">
         <div class="container">
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center" data-aos="flip-left">
                 <div class="menu-content pb-40 col-lg-8">
                     <div class="title text-center">
                         <h1 class="mb-10">Thông tin về Công ty</h1>

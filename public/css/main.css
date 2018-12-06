@@ -3507,6 +3507,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-text-content {
     font-size: 22px;
 }
+
+.slick-slide{
+    display: none;
+    float: left;
+    height: auto;
+    min-height: 1px;
+}
+
+.slick-slide img {
+    max-width: 174px !important;
+}
+
+.customer-logo, .customer-logo-wrap{
+    background-color: #eeeeee;
+}
 /*
 ################
                End Blog Details  Page style
