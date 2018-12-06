@@ -179,31 +179,31 @@
         </div>
         <div class="customer-logo">
             <div class="thumb">
-                <img alt="Dân trí" class="" src="http://dankogroup.com.vn/pic/QA/Dan_tri_l_636783940366013828.png">
+                <img alt="Dân trí" class="" src="{{ asset('img/cuslogo/Dan_tri_l_636783940366013828.png') }}">
             </div>
             <div class="thumb">
-                <img alt="Capitaland" class="" src="http://dankogroup.com.vn/pic/QA/logo-doit_636751917945941287_HasThumb.png">
+                <img alt="Capitaland" class="" src="{{ asset('img/cuslogo/captalan.png') }}">
             </div>
             <div class="thumb">
-                <img alt="VTV" class="" src="http://dankogroup.com.vn/pic/QA/VTV_201_636783940459229160.png">
+                <img alt="VTV" class="" src="{{ asset('img/cuslogo/VTV_201_636783940459229160.png') }}">
             </div>
             <div class="thumb">
-                <img alt="FLC Group" class="" src="http://dankogroup.com.vn/pic/QA/logo-doit_636751917680227737_HasThumb.png">
+                <img alt="FLC Group" class="" src="{{ asset('img/cuslogo/flc.png') }}">
             </div>
             <div class="thumb">
-                <img alt="ICID Group" class="" src="http://dankogroup.com.vn/pic/QA/logo-doit_636751917573877848_HasThumb.png">
+                <img alt="ICID Group" class="" src="{{ asset('img/cuslogo/idic.png') }}">
             </div>
             <div class="thumb">
-                <img alt="Vietcombank" class="" src="http://dankogroup.com.vn/pic/QA/logo-doit_636751917389591651_HasThumb.png">
+                <img alt="Vietcombank" class="" src="{{ asset('img/cuslogo/vietcombank.png') }}">
             </div>
             <div class="thumb">
-                <img alt="Vinh Hạnh Group" class="" src="http://dankogroup.com.vn/pic/QA/logo-doit_636751917165460572_HasThumb.png">
+                <img alt="Vinh Hạnh Group" class="" src="{{ asset('img/cuslogo/vinh_hanh.png') }}">
             </div>
             <div class="thumb">
                 <img alt="Ngân hàng Phương Đông" class="" src="http://dankogroup.com.vn/pic/QA/logo-doit_636751917038814660_HasThumb.png">
             </div>
             <div class="thumb">
-                <img alt="Vin Group" class="" src="http://dankogroup.com.vn/pic/QA/vingroup-_636783246130875849.png">
+                <img alt="Vin Group" class="" src="{{ asset('img/cuslogo/vingroup.png') }}">
             </div>
             <div class="thumb">
                 <img alt="Holdings VietNam" class="" src="http://dankogroup.com.vn/pic/QA/xnew-logo_636783247395788198.png">
