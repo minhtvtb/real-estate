@@ -218,7 +218,23 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         dots: false,
         prevArrow: false,
-        nextArrow: false
+        nextArrow: false,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+        ]
     });
 
     //  Gallery
