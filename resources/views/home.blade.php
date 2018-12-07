@@ -6,13 +6,13 @@
 @section('content')
     <!-- start banner  -->
     <section class="banner-area relative" id="home">
-        <div class="overlay overlay-bg"></div>
+        <div class="overlay overlay-bg">
+            <a href="/" class="logo-image">
+                <img src="{{asset('img/logo-pc.png')}}" alt="" title=""/>
+            </a>
+            <div class="banner-gradient1 logo-pc"></div>
+        </div>
         <div class="container">
-            <div class="banner-gradient1 logo-pc">
-                <a href="/">
-                    <img src="{{asset('img/logo.png')}}" alt="" title="" style="height: 120px"/>
-                </a>
-            </div>
             <div class="row fullscreen d-flex align-items-center justify-content-center">
                 <div class="banner-content col-lg-8" data-aos="fade-up">
                     <div id="logo" class="logo-mobile">

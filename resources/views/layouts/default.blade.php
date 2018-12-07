@@ -53,7 +53,7 @@
         <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
                 <a href="/">
-                    <img src="{{asset('img/logo.png')}}" alt="" title="" style="height: 100px; display: none"/>
+                    <img src="{{asset('img/logo-pc.png')}}" alt="" title="" style="height: 100px; display: none"/>
                 </a>
             </div>
             <nav id="nav-menu-container">

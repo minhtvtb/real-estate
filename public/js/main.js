@@ -154,6 +154,7 @@ $(document).ready(function () {
     var headerTop = $('div.header-top');
     var header = $('#header');
     var logoPc = $('div.banner-gradient1');
+    var logoImg = $('.logo-image');
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -161,6 +162,7 @@ $(document).ready(function () {
             logoImage.show();
             logoImage.height(60);
             logoPc.hide();
+            logoImg.hide();
         }
         else {
             logoImage.hide();
@@ -177,6 +179,7 @@ $(document).ready(function () {
             }
             if ($(this).scrollTop() < 100){
                 logoPc.show();
+                logoImg.show();
             }
         }
     });
