@@ -225,7 +225,7 @@
             <div class="row d-flex justify-content-center" data-aos="flip-up">
                 <div class="menu-content pb-60 col-lg-10">
                     <div class="title text-center">
-                        <h1 class="mb-10">Về nhân sự của chúng tôi</h1>
+                        <h1 class="mb-10">Lãnh đạo YGM</h1>
                         <p>Những người đã xây dựng lên YGM thành công hôm nay.</p>
                     </div>
                 </div>
