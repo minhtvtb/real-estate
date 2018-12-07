@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col-6 top-head-left">
                 <ul class="menu-right">
-                    <li id="tham-khao"><a href="#">Tham khảo</a></li>
+                    <li><a href="#">Tham khảo</a></li>
                     <li><a href="#">Liên hệ</a></li>
                 </ul>
             </div>
@@ -41,9 +41,9 @@
                             Hotline : 0971262223
                         </a>
                     </li>
-                    <li><a href="#" style="font-size: 16px"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" style="font-size: 16px"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#" style="font-size: 16px"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#" style="font-size: 16px"><i class="fa fa-facebook social-header"></i></a></li>
+                    <li><a href="#" style="font-size: 16px"><i class="fa fa-twitter social-header"></i></a></li>
+                    <li><a href="#" style="font-size: 16px"><i class="fa fa-dribbble social-header"></i></a></li>
                 </ul>
             </div>
         </div>

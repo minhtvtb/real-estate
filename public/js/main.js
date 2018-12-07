@@ -11,19 +11,19 @@ $(document).ready(function () {
         header_height_static = $('.site-header.static').outerHeight(),
         fitscreen = window_height - header_height;
 
-    var headerLeft = $('.top-head-left');
-    var headerRight = $('.top-head-right');
-
-    if (window_width < 500 && window_width > 420) {
-        headerLeft.addClass('col-4').removeClass('col-6');
-        headerRight.addClass('col-7').removeClass('col-6');
-    } else if(window_width < 420 && window_width > 324) {
-        headerLeft.addClass('col-3').removeClass('col-6');
-        headerRight.addClass('col-7').removeClass('col-6');
-    } else if (window_width < 325) {
-        headerLeft.find('.menu-right').remove();
-        headerRight.addClass('col-8').removeClass('col-6');
-    }
+    // var headerLeft = $('.top-head-left');
+    // var headerRight = $('.top-head-right');
+    //
+    // if (window_width < 500 && window_width > 420) {
+    //     headerLeft.addClass('col-4').removeClass('col-6');
+    //     headerRight.addClass('col-7').removeClass('col-6');
+    // } else if(window_width < 420 && window_width > 324) {
+    //     headerLeft.addClass('col-3').removeClass('col-6');
+    //     headerRight.addClass('col-7').removeClass('col-6');
+    // } else if (window_width < 325) {
+    //     headerLeft.find('.menu-right').remove();
+    //     headerRight.addClass('col-8').removeClass('col-6');
+    // }
 
     $('.fullscreen').css('height', window_height);
     $('.fitscreen').css('height', fitscreen);
