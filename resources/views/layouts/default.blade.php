@@ -36,9 +36,14 @@
             </div>
             <div class="col-6 top-head-right">
                 <ul>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li>
+                        <a href="tel:+84971262223" class="font-weight-bold" style="color: #fca940; font-size: 14px">
+                            Hotline : 0971262223
+                        </a>
+                    </li>
+                    <li><a href="#" style="font-size: 16px"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" style="font-size: 16px"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" style="font-size: 16px"><i class="fa fa-dribbble"></i></a></li>
                 </ul>
             </div>
         </div>
