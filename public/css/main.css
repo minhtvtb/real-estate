@@ -3503,7 +3503,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 466px) {
-    .banner-gradient1 {
+    .banner-gradient1, .logo-image {
         display: none;
     }
 
