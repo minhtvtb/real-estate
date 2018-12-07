@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col-6 top-head-left">
                 <ul class="menu-right">
-                    <li><a href="#">Tham khảo</a></li>
+                    <li id="tham-khao"><a href="#">Tham khảo</a></li>
                     <li><a href="#">Liên hệ</a></li>
                 </ul>
             </div>

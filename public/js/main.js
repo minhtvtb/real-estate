@@ -11,6 +11,13 @@ $(document).ready(function () {
         header_height_static = $('.site-header.static').outerHeight(),
         fitscreen = window_height - header_height;
 
+    var headerLeft = $('.top-head-left');
+    var headerRight = $('.top-head-right');
+    if (window_width < 500) {
+        headerLeft.addClass('col-4').removeClass('col-6');
+        headerRight.addClass('col-7').removeClass('col-6');
+    }
+
     $('.fullscreen').css('height', window_height);
     $('.fitscreen').css('height', fitscreen);
 
