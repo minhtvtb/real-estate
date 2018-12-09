@@ -23,7 +23,9 @@
                         <img class="img-fluid" src="img/pages/ex1.jpg" alt="">
                     </div>
                     <p class="date">29/09/2018</p>
-                    <a href="#"><h4>Dự án Best Western Premier Sapphire</h4></a>
+                    <a href="{{ route('projects.tenement', ['slug' => 'du-an-florence']) }}">
+                        <h4>Dự án Best Western Premier Sapphire</h4>
+                    </a>
                     <p>
                         Với mục tiêu đem đến cho khách hàng một không gian sống đẳng cấp, DOJI còn mang đến một thiên đường
                         nghỉ dưỡng hàng đầu khu vực.

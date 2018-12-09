@@ -19,10 +19,11 @@ Route::get('/gioi-thieu', function (){
     return view('about');
 })->name('about');
 
-Route::get('/du-an', function (){
-    return view('price');
-})->name('projects');
-
+Route::prefix('/du-an')
+    ->group(function (){
+        Route::get('/', 'ProjectsController@index')->name('projects');
+        Route::get('chung-cu/{slug}', 'EenementHousesController@index')->name('projects.tenement');
+    });
 Route::get('/ygm-tv', function (){
     return view('blog');
 })->name('blog');
