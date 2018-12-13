@@ -17,7 +17,7 @@ use App\Validators\EenementHouseValidator;
  *
  * @package namespace App\Http\Controllers;
  */
-class EenementHousesController extends Controller
+class TenementHousesController extends Controller
 {
     /**
      * @var EenementHouseRepository

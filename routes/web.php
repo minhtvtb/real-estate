@@ -27,3 +27,8 @@ Route::prefix('/du-an')
 Route::get('/ygm-tv', function (){
     return view('blog');
 })->name('blog');
+
+
+Route::group(['prefix' => 'ygm-admin'], function () {
+    Voyager::routes();
+});
