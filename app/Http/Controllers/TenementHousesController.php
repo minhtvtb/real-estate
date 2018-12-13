@@ -13,7 +13,7 @@ use App\Repositories\EenementHouseRepository;
 use App\Validators\EenementHouseValidator;
 
 /**
- * Class EenementHousesController.
+ * Class TenementHousesController.
  *
  * @package namespace App\Http\Controllers;
  */
@@ -30,7 +30,7 @@ class TenementHousesController extends Controller
     protected $validator;
 
     /**
-     * EenementHousesController constructor.
+     * TenementHousesController constructor.
      *
      * @param EenementHouseRepository $repository
      * @param EenementHouseValidator $validator

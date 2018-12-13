@@ -22,7 +22,7 @@ Route::get('/gioi-thieu', function (){
 Route::prefix('/du-an')
     ->group(function (){
         Route::get('/', 'ProjectsController@index')->name('projects');
-        Route::get('chung-cu/{slug}', 'EenementHousesController@index')->name('projects.tenement');
+        Route::get('chung-cu/{slug}', 'TenementHousesController@index')->name('projects.tenement');
     });
 Route::get('/ygm-tv', function (){
     return view('blog');
