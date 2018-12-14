@@ -29,6 +29,6 @@ Route::get('/ygm-tv', function (){
 })->name('blog');
 
 
-Route::group(['prefix' => 'ygm-admin'], function () {
+Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
