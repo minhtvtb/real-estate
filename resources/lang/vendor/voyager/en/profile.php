@@ -2,13 +2,13 @@
 
 return [
     'avatar'           => 'Avatar',
-    'edit'             => 'Edit My Profile',
-    'edit_user'        => 'Edit User',
-    'password'         => 'Password',
-    'password_hint'    => 'Leave empty to keep the same',
-    'role'             => 'Role',
-    'roles'            => 'Roles',
-    'role_default'     => 'Default Role',
-    'roles_additional' => 'Additional Roles',
-    'user_role'        => 'User Role',
+    'edit'             => 'Chỉnh sửa tài khoản',
+    'edit_user'        => 'Sửa thông tin người dùng',
+    'password'         => 'Mật khẩu',
+    'password_hint'    => 'Di chuyển để giữ nguyên',
+    'role'             => 'Quyền',
+    'roles'            => 'Những quyền',
+    'role_default'     => 'Quyền mặc định',
+    'roles_additional' => 'Thêm quyền',
+    'user_role'        => 'Quyền người dùng',
 ];
