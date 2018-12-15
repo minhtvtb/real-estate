@@ -141,7 +141,7 @@
             <div class="dang-ky-tu-van container section" id="Đăng ký tư vấn">
                 <div class="widget HTML" data-version="1" id="HTML10">
                     <div class="widget-content">
-                        <div class="col-xs-12 col-sm-8 left text-center">
+                        <div class="col-xs-12 left text-center">
                             <h2 class="title">BẠN THỰC SỰ MUỐN SỞ HỮU CĂN HỘ {{ $post->title }}?</h2>
                         </div>
                         <div class="col-xs-12 col-sm-4 right">
