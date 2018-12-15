@@ -5,6 +5,7 @@
 @endsection
 @section('more-style')
     {!! $post->header !!}
+    {!! $post->sub_header !!}
 @endsection
 @section('content')
     <!-- start banner Area -->
@@ -79,7 +80,7 @@
         </div>
     </section>
     <div id="main-home">
-        {!! $post->body !!}
+        {!! $post->is_raw ? $post->raw_code : $post->body !!}
         <div id="dang-ky-nhan-thong-tin">
             <div class="dang-ky-nhan-thong-tin container section" id="Đăng ký nhận thông tin">
                 <div class="widget HTML" data-version="1" id="HTML7">

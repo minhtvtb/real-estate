@@ -53,11 +53,8 @@ class PostsController extends Controller
     {
         $post = $this->repository->findWhere(['slug' => $slug])->first();
 
-        if (request()->wantsJson()) {
-
-            return response()->json([
-                'post' => $post,
-            ]);
+        if (!$post){
+            abort(404);
         }
 
         return view('projects.tenement', compact('post'));

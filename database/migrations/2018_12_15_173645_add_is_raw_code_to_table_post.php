@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AlterColumnHeaderChangeType extends Migration
+class AddIsRawCodeToTablePost extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class AlterColumnHeaderChangeType extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->longText('header')->change();
+            $table->boolean('is_raw')->default(0)->after('raw_code');
         });
     }
 
@@ -26,7 +26,7 @@ class AlterColumnHeaderChangeType extends Migration
     public function down()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->text('header')->change();
+            $table->dropColumn('is_raw');
         });
     }
 }
