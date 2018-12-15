@@ -2,6 +2,7 @@
 @section('style')
     <link rel="stylesheet" href="{{ asset('css/frontend/clone/project-1.css') }}">
     <link rel="stylesheet" href="{{ asset('css/frontend/tenement.css') }}">
+    {!! $post->header !!}
 @endsection
 @section('content')
     <!-- start banner Area -->
@@ -229,4 +230,5 @@
 @endsection
 @section('script')
     <script src="{{ asset('js/frontend/price.js') }}"></script>
+    {!! $post->footer !!}
 @endsection
