@@ -51,7 +51,7 @@ class ProjectsController extends Controller
     {
         $projects = $this->postRepository->all();
 
-        if (count($projects < 1)) {
+        if (count($projects) < 1) {
             abort(404);
         }
 
