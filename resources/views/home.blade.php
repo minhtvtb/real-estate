@@ -50,7 +50,7 @@
                             <div class="single-events" data-aos="fade-right">
                                 <img class="img-fluid" src="{{ asset(Voyager::image($post->thumbnail('cropped'))) }}" alt=""style="width: 530px">
                                 <a href="#"><h4>{{ $post->title }}</h4></a>
-                                <h6><span>24/10/2018</span> tại {{ $post->location }}</h6>
+                                <h6><span>{{ formatDate($post->updated_at) }}</span> tại {{ $post->location }}</h6>
                                 <p class="limited-text">{{ $post->quy_mo_content }}</p>
                                 <a href="{{ route('projects.detail', ['type' => $post->category->slug, 'slug' => $post->slug]) }}" class="primary-btn text-uppercase">
                                     Thông tin chi tiết

@@ -23,7 +23,7 @@
                         <img class="img-fluid" src="img/pages/ex1.jpg" alt="">
                     </div>
                     <p class="date">29/09/2018</p>
-                    <a href="{{ route('projects.tenement', ['slug' => 'du-an-florence']) }}">
+                    <a href="{{ route('projects.detail', ['slug' => 'du-an-florence']) }}">
                         <h4>Dự án Best Western Premier Sapphire</h4>
                     </a>
                     <p>

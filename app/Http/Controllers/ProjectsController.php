@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\PostRepository;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -20,9 +21,9 @@ use App\Validators\ProjectValidator;
 class ProjectsController extends Controller
 {
     /**
-     * @var ProjectRepository
+     * @var PostRepository
      */
-    protected $repository;
+    protected $postRepository;
 
     /**
      * @var ProjectValidator
@@ -32,12 +33,12 @@ class ProjectsController extends Controller
     /**
      * ProjectsController constructor.
      *
-     * @param ProjectRepository $repository
+     * @param PostRepository $repository
      * @param ProjectValidator $validator
      */
-    public function __construct(ProjectRepository $repository, ProjectValidator $validator)
+    public function __construct(PostRepository $repository, ProjectValidator $validator)
     {
-        $this->repository = $repository;
+        $this->postRepository = $repository;
         $this->validator  = $validator;
     }
 
@@ -48,13 +49,10 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        $projects = $this->repository->all();
+        $projects = $this->postRepository->all();
 
-        if (request()->wantsJson()) {
-
-            return response()->json([
-                'data' => $projects,
-            ]);
+        if (count($projects < 1)) {
+            abort(404);
         }
 
         return view('price', compact('projects'));
@@ -75,7 +73,7 @@ class ProjectsController extends Controller
 
             $this->validator->with($request->all())->passesOrFail(ValidatorInterface::RULE_CREATE);
 
-            $project = $this->repository->create($request->all());
+            $project = $this->postRepository->create($request->all());
 
             $response = [
                 'message' => 'Project created.',
@@ -109,7 +107,7 @@ class ProjectsController extends Controller
      */
     public function show($id)
     {
-        $project = $this->repository->find($id);
+        $project = $this->postRepository->find($id);
 
         if (request()->wantsJson()) {
 
@@ -130,7 +128,7 @@ class ProjectsController extends Controller
      */
     public function edit($id)
     {
-        $project = $this->repository->find($id);
+        $project = $this->postRepository->find($id);
 
         return view('projects.edit', compact('project'));
     }
@@ -151,7 +149,7 @@ class ProjectsController extends Controller
 
             $this->validator->with($request->all())->passesOrFail(ValidatorInterface::RULE_UPDATE);
 
-            $project = $this->repository->update($request->all(), $id);
+            $project = $this->postRepository->update($request->all(), $id);
 
             $response = [
                 'message' => 'Project updated.',
@@ -188,7 +186,7 @@ class ProjectsController extends Controller
      */
     public function destroy($id)
     {
-        $deleted = $this->repository->delete($id);
+        $deleted = $this->postRepository->delete($id);
 
         if (request()->wantsJson()) {
 
