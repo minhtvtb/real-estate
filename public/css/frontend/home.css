@@ -12,3 +12,10 @@
 .customer-logo, .customer-logo-wrap{
     background-color: #eeeeee;
 }
+
+.limited-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width:540px;
+    max-height: 70px;
+}

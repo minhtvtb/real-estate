@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/gioi-thieu', function (){
     return view('about');
@@ -22,7 +20,7 @@ Route::get('/gioi-thieu', function (){
 Route::prefix('/du-an')
     ->group(function (){
         Route::get('/', 'ProjectsController@index')->name('projects');
-        Route::get('chung-cu/{slug}', 'TenementHousesController@index')->name('projects.tenement');
+        Route::get('{type}/{slug}', 'PostsController@index')->name('projects.detail');
     });
 Route::get('/ygm-tv', function (){
     return view('blog');

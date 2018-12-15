@@ -44,48 +44,34 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 event-left">
-                    <div class="single-events" data-aos="fade-right">
-                        <img class="img-fluid" src="{{ asset('img/u1.jpg') }}" alt=""style="width: 530px">
-                        <a href="#"><h4>Sunshine Wonder Villas</h4></a>
-                        <h6><span>24/10/2018</span> tại Hà Nội</h6>
-                        <p>
-                            Sunshine Wonder Villas với view sân golf thoáng đãng, nội thất độc bản xa xỷ, hệ thống giao
-                            thông ngầm hiện đại, tiện ích trường học hoàng gia...
-                        </p>
-                        <a href="#" class="primary-btn text-uppercase">Thông tin chi tiết</a>
-                    </div>
-                    <div class="single-events" data-aos="fade-right">
-                        <img class="img-fluid" src="{{ asset('img/u3.jpg') }}" alt=""style="width: 530px">
-                        <a href="#"><h4>Sunshine Wonder Villas</h4></a>
-                        <h6><span>24/10/2018</span> tại Hà Nội</h6>
-                        <p>
-                            Sunshine Wonder Villas với view sân golf thoáng đãng, nội thất độc bản xa xỷ, hệ thống giao
-                            thông ngầm hiện đại, tiện ích trường học hoàng gia...
-                        </p>
-                        <a href="#" class="primary-btn text-uppercase">Thông tin chi tiết</a>
-                    </div>
+                    @for($i = 0; $i < 2; $i++)
+                        @php($post = isset($posts[$i]) ? $posts[$i] : null)
+                        @if($post)
+                            <div class="single-events" data-aos="fade-right">
+                                <img class="img-fluid" src="{{ asset('img/u1.jpg') }}" alt=""style="width: 530px">
+                                <a href="#"><h4>{{ $post->title }}</h4></a>
+                                <h6><span>24/10/2018</span> tại {{ $post->location }}</h6>
+                                <p class="limited-text">{{ $post->quy_mo_content }}</p>
+                                <a href="{{ route('projects.detail', ['type' => $post->category->slug, 'slug' => $post->slug]) }}" class="primary-btn text-uppercase">
+                                    Thông tin chi tiết
+                                </a>
+                            </div>
+                        @endif
+                    @endfor
                 </div>
                 <div class="col-lg-6 event-right">
-                    <div class="single-events" data-aos="fade-left">
-                        <a href="#"><h4>Sunshine Wonder Villas</h4></a>
-                        <h6><span>24/10/2018</span> tại Hà Nội</h6>
-                        <p>
-                            Sunshine Wonder Villas với view sân golf thoáng đãng, nội thất độc bản xa xỷ, hệ thống giao
-                            thông ngầm hiện đại, tiện ích trường học hoàng gia...
-                        </p>
-                        <a href="#" class="primary-btn text-uppercase">Thông tin chi tiết</a>
-                        <img class="img-fluid" src="{{ asset('img/u2.jpg') }}" alt=""style="width: 530px">
-                    </div>
-                    <div class="single-events" data-aos="fade-left">
-                        <a href="#"><h4>Sunshine Wonder Villas</h4></a>
-                        <h6><span>24/10/2018</span> tại Hà Nội</h6>
-                        <p>
-                            Sunshine Wonder Villas với view sân golf thoáng đãng, nội thất độc bản xa xỷ, hệ thống giao
-                            thông ngầm hiện đại, tiện ích trường học hoàng gia...
-                        </p>
-                        <a href="#" class="primary-btn text-uppercase">Thông tin chi tiết</a>
-                        <img class="img-fluid" src="{{ asset('img/u4.jpg') }}" alt=""style="width: 530px">
-                    </div>
+                    @for($i = 2; $i < 4; $i++)
+                        @php($post = isset($posts[$i]) ? $posts[$i] : null)
+                        @if($post)
+                            <div class="single-events" data-aos="fade-left">
+                                <a href="#"><h4>{{ $post->title }}</h4></a>
+                                <h6><span>{{ formatDate($post->updated_at) }}</span> tại {{ $post->location }}</h6>
+                                <p class="limited-text">{{ $post->quy_mo_content }}</p>
+                                <a href="{{ route('projects.detail', ['type' => $post->category->slug, 'slug' => $post->slug]) }}" class="primary-btn text-uppercase">Thông tin chi tiết</a>
+                                <img class="img-fluid" src="{{ asset(Voyager::image($post->thumbnail('cropped'))) }}" alt=""style="width: 530px">
+                            </div>
+                        @endif
+                    @endfor
                 </div>
             </div>
         </div>
