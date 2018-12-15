@@ -141,19 +141,16 @@
             <div class="dang-ky-tu-van container section" id="Đăng ký tư vấn">
                 <div class="widget HTML" data-version="1" id="HTML10">
                     <div class="widget-content">
-                        <div class="col-xs-12 col-sm-8 left">
-                            <h2 class="title">BẠN THỰC SỰ MUỐN SỞ HỮU CĂN HỘ FLORENCE?</h2>
+                        <div class="col-xs-12 col-sm-8 left text-center">
+                            <h2 class="title">BẠN THỰC SỰ MUỐN SỞ HỮU CĂN HỘ {{ $post->title }}?</h2>
                         </div>
                         <div class="col-xs-12 col-sm-4 right">
                             <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
                                     data-target="#myModal">Đăng ký tư vấn
                             </button>
-
-
                             <!-- Modal -->
                             <div id="myModal" class="modal fade" role="dialog">
                                 <div class="modal-dialog">
-
                                     <!-- Modal content-->
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -166,7 +163,7 @@
                                                     <iframe id="hidden_iframe" name="hidden_iframe"
                                                             onload="if(submitted){};" style="display:none;"></iframe>
                                                     <div class="thong-tin-form-blogdep">
-                                                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSebV4X0dFJA7YZimFntLwPfojg_fsXYP9TkAm4yRCZhPdFCaw/formResponse"
+                                                        <form action="#"
                                                               id="t_form_1" method="POST" target="hidden_iframe">
                                                             <div class="truong-thong-tin-form">
                                                                 <input type="text"
