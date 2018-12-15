@@ -2,6 +2,8 @@
 @section('style')
     <link rel="stylesheet" href="{{ asset('css/frontend/clone/project-1.css') }}">
     <link rel="stylesheet" href="{{ asset('css/frontend/tenement.css') }}">
+@endsection
+@section('more-style')
     {!! $post->header !!}
 @endsection
 @section('content')
@@ -230,5 +232,7 @@
 @endsection
 @section('script')
     <script src="{{ asset('js/frontend/price.js') }}"></script>
+@endsection
+@section('more-js')
     {!! $post->footer !!}
 @endsection
