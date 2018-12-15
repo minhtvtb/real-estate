@@ -48,7 +48,7 @@
                         @php($post = isset($posts[$i]) ? $posts[$i] : null)
                         @if($post)
                             <div class="single-events" data-aos="fade-right">
-                                <img class="img-fluid" src="{{ asset('img/u1.jpg') }}" alt=""style="width: 530px">
+                                <img class="img-fluid" src="{{ asset(Voyager::image($post->thumbnail('cropped'))) }}" alt=""style="width: 530px">
                                 <a href="#"><h4>{{ $post->title }}</h4></a>
                                 <h6><span>24/10/2018</span> tại {{ $post->location }}</h6>
                                 <p class="limited-text">{{ $post->quy_mo_content }}</p>
