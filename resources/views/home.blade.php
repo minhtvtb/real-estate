@@ -219,7 +219,7 @@
             <div class="row">
                 <div class="active-exibition-carusel text-center">
                     <div class="single-exibition item">
-                        <img src="https://via.placeholder.com/360x360.png?text=%E1%BA%A3nh%20ch%C3%A2n%20dung%20demo" class="rounded-circle" alt="">
+                        <img src="https://via.placeholder.com/360x360.png" class="rounded-circle" alt="">
                         <ul class="tags"></ul>
                         <a href="#"><h4>HOÀNG QUỐC GIA</h4></a>
                         <p>
@@ -258,7 +258,7 @@
                     </div>
 
                     <div class="single-exibition item">
-                        <img src="https://via.placeholder.com/360x360.png?text=%E1%BA%A3nh%20ch%C3%A2n%20dung%20demo" class="rounded-circle" alt="">
+                        <img src="https://via.placeholder.com/360x360.png" class="rounded-circle" alt="">
                         <ul class="tags"></ul>
                         <a href="#"><h4>TRẦN THỊ HỒI</h4></a>
                         <p>
