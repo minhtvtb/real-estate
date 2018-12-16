@@ -43,23 +43,25 @@
             <div class="progress-table">
                 <div class="table-head">
                     <div class="serial">#</div>
-                    <div class="percentage">Vị trí tuyển dụng</div>
+                    <div class="country">Vị trí tuyển dụng</div>
                     <div class="country">Phòng ban/Đơn vị</div>
                     <div class="visit">Số lượng</div>
-                    <div class="country">Địa điểm</div>
-                    <div class="country">Hạn nộp hồ sơ</div>
+                    <div class="visit">Địa điểm</div>
+                    <div class="visit">Hạn nộp hồ sơ</div>
                 </div>
                 @php($i = 1)
                 @forelse($recruitings as $recruiting)
                     <a href="#">
                         <div class="table-row">
                             <div class="serial">{{ $i++ }}</div>
-                            <div class="percentage"><img src="{{ asset(Voyager::image($recruiting->thumbnail('small'))) }}" alt="flag">
-                                {{ $recruiting->title }}</div>
+                            <div class="country">
+                                <img src="{{ asset(Voyager::image($recruiting->thumbnail('small'))) }}" alt="flag">
+                                {{ $recruiting->title }}
+                            </div>
                             <div class="country">{{ $recruiting->department }}</div>
                             <div class="visit">3</div>
-                            <div class="country">{{ $recruiting->location }}</div>
-                            <div class="country">{{ formatDate($recruiting->updated_at) }}</div>
+                            <div class="visit">{{ $recruiting->location }}</div>
+                            <div class="visit">{{ formatDate($recruiting->updated_at) }}</div>
                         </div>
                     </a>
                 @empty
