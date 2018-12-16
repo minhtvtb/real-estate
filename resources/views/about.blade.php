@@ -54,14 +54,14 @@
                 <div class="menu-content pb-40 col-lg-8">
                     <div class="title text-center">
                         <h1 class="mb-10">Thông tin về Công ty</h1>
-                        <p>Cuộc sống đem lại rất nhiều điều kì diệu, hãy tận hưởng và khám phá!</p>
+                        <p>Giới thiệu về sản Bất động sản YGM!</p>
                     </div>
                 </div>
             </div>
             <div class="single-info row mt-40">
                 <div class="col-lg-6 col-md-12 mt-120 text-center no-padding info-left">
                     <div class="info-thumb">
-                        <img src="img/pages/about-img.jpg" class="img-fluid" alt="">
+                        <img src="{{ asset('img/pages/van-phong.jpg') }}" class="img-fluid" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 no-padding info-rigth">
@@ -69,23 +69,28 @@
                         <h2 class="pb-30">Chúng tôi tin rằng<br>
                             bạn có nhà đẹp <br>
                             bạn thêm hạnh phúc!</h2>
+                        <h5>Thành lập</h5>
                         <p>
-                            Bất cứ ai trên thế giới này đều mang trong mình ước mơ sở hữu một căn nhà đẹp, đầy đủ tiện nghi.
-                            Bạn thử tưởng tượng xem sau bao bộn bề cuộc sống nhà là chốn bình yên đón bạn trở về, vậy
-                            thì căn nhà đẹp sẽ mang đến cho bạn cảm giác hạnh phúc hơn bao giờ hết.
+                            Là tiền thân của HaNoiLand, đã từng có hơn 10 năm kinh nghiệm trong lĩnh vực bất động sản.
+                            Và mới được tách ra từ năm 2016.
+                            Hiện nay, YGM là một trong những công ty có nhiều uy tín trong lĩnh vực đầu tư và phát triển bất động sản
+
                         </p>
-                        <br>
+                        <h5>Tầm nhìn</h5>
                         <p>
-                            Tân Long Land mang đến cho bạn những giá trị đó. Công ty chúng tôi luôn muốn phục vụ tới khách
-                            hàng những gì tốt đẹp nhất. Chúng tôi kiến tạo lên những ngôi nhà mang tên "bình yên". Để bạn dù
-                            có đi đâu vẫn luôn móng ngóng ngày trở về ngôi nhà thân yêu.
+                            Là một Tập đoàn bất động sản đẳng cấp quốc tế, vị thế cao, phát triển vững mạnh, góp phần mang lại cuộc sống hạnh phúc và thịnh vượng cho cộng đồng.
                         </p>
-                        <br>
+                        <h5>Sứ mạng</h5>
                         <p>
-                            Là con người bạn đều mong muốn những điều tốt đẹp nhất cho những người thân yêu trong gia đình.
-                            Những dự án của chúng tôi sẽ mang đến cho bạn những ngôi nhà đẳng cấp nhất, đẹp nhất, lung linh
-                            nhất và đặc biệt không gian vô cùng ấm cúng.
+                            Chúng tôi phát triển dự án, không chỉ ở những mét vuông xây dựng mà góp phần kiến tạo cộng đồng nhân văn tiên tiến, có phong cách sống hiện đại với nhiều tiện ích, qua đó tạo nên giá trị sống gia tăng bền vững cho mình và cho xã hội.
                         </p>
+                        <h5>Giá trị cốt lõi</h5>
+                        <ul style="list-style: circle">
+                            <li>Cam kết chất lượng dịch vụ</li>
+                            <li>Phục vụ khách hàng tận tâm - chuyên nghiệp</li>
+                            <li>Môi trường làm việc thân thiện tạo nhiều cơ hội phát triển</li>
+                            <li>Trung thực, uy tín, tôn trọng đạo đức kinh doanh.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
