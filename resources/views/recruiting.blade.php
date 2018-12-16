@@ -49,26 +49,23 @@
                     <div class="country">Địa điểm</div>
                     <div class="country">Hạn nộp hồ sơ</div>
                 </div>
-                <div class="active-exibition-carusel">
-                    @php($i = 1)
-                    @forelse($recruitings as $recruiting)
-                        <div class="table-row">
+                @php($i = 1)
+                @forelse($recruitings as $recruiting)
+                    <div class="table-row">
+                        <a href="#">
                             <div class="serial">{{ $i++ }}</div>
                             <div class="percentage">{{ $recruiting->title }}</div>
                             <div class="country">{{ $recruiting->department }}</div>
                             <div class="visit">3</div>
                             <div class="country">{{ $recruiting->location }}</div>
                             <div class="country">{{ formatDate($recruiting->updated_at) }}</div>
-                        </div>
-                    @empty
-                        <a href="#">
-                            <div class="table-row">
-                                Không có tin tuyển dụng nào !
-                            </div>
                         </a>
-                    @endforelse
-                </div>
-
+                    </div>
+                @empty
+                    <div class="table-row">
+                        Không có tin tuyển dụng nào !
+                    </div>
+                @endforelse
             </div>
         </div>
     </div>
