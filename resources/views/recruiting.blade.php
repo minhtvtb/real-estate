@@ -19,17 +19,17 @@
             <div class="row">
                 <div class="active-exibition-carusel">
                     @forelse($recruitings as $recruiting)
-                    <div class="single-exibition item">
-                        <img src="img/e1.jpg" alt="">
-                        <ul class="tags">
-                            <li><a href="#">{{ $recruiting->tag }}</a></li>
-                        </ul>
-                        <a href="#"><h4>{{ $recruiting->title }}</h4></a>
-                        <p class="limited-text">
-                            {{ $recruiting->excerpt }}
-                        </p>
-                        <h6 class="date">{{ formatDate($recruiting->updated_at) }}</h6>
-                    </div>
+                        <div class="single-exibition item">
+                            <img src="img/e1.jpg" alt="">
+                            <ul class="tags">
+                                <li><a href="#">{{ $recruiting->tag }}</a></li>
+                            </ul>
+                            <a href="#"><h4>{{ $recruiting->title }}</h4></a>
+                            <p class="limited-text">
+                                {{ $recruiting->excerpt }}
+                            </p>
+                            <h6 class="date">{{ formatDate($recruiting->updated_at) }}</h6>
+                        </div>
                     @empty
                         <div class="single-exibition item"></div>
                     @endforelse
@@ -52,16 +52,14 @@
                 <div class="active-exibition-carusel">
                     @php($i = 1)
                     @forelse($recruitings as $recruiting)
-                        <a href="#">
-                            <div class="table-row">
-                                <div class="serial">{{ $i++ }}</div>
-                                <div class="percentage">{{ $recruiting->title }}</div>
-                                <div class="country">{{ $recruiting->department }}</div>
-                                <div class="visit">3</div>
-                                <div class="country">{{ $recruiting->location }}</div>
-                                <div class="country">{{ formatDate($recruiting->updated_at) }}</div>
-                            </div>
-                        </a>
+                        <div class="table-row">
+                            <div class="serial">{{ $i++ }}</div>
+                            <div class="percentage">{{ $recruiting->title }}</div>
+                            <div class="country">{{ $recruiting->department }}</div>
+                            <div class="visit">3</div>
+                            <div class="country">{{ $recruiting->location }}</div>
+                            <div class="country">{{ formatDate($recruiting->updated_at) }}</div>
+                        </div>
                     @empty
                         <a href="#">
                             <div class="table-row">

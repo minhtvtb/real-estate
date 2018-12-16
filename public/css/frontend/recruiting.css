@@ -1,0 +1,6 @@
+.limited-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width:540px;
+    max-height: 70px;
+}
