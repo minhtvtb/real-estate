@@ -219,7 +219,7 @@
             <div class="row">
                 <div class="active-exibition-carusel text-center">
                     <div class="single-exibition item">
-                        <img src="https://via.placeholder.com/360x360.png" class="rounded-circle" alt="">
+                        <img src="https://via.placeholder.com/360x360.png?text=HO%C3%80NG%20QU%E1%BB%90C%20GIA" class="rounded-circle" alt="">
                         <ul class="tags"></ul>
                         <a href="#"><h4>HOÀNG QUỐC GIA</h4></a>
                         <p>
@@ -258,7 +258,7 @@
                     </div>
 
                     <div class="single-exibition item">
-                        <img src="https://via.placeholder.com/360x360.png" class="rounded-circle" alt="">
+                        <img src="https://via.placeholder.com/360x360.png?text=TR%E1%BA%A6N%20TH%E1%BB%8A%20H%E1%BB%92I" class="rounded-circle" alt="">
                         <ul class="tags"></ul>
                         <a href="#"><h4>TRẦN THỊ HỒI</h4></a>
                         <p>
