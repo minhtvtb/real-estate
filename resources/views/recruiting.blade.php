@@ -51,16 +51,16 @@
                 </div>
                 @php($i = 1)
                 @forelse($recruitings as $recruiting)
-                    <div class="table-row">
-                        <a href="#">
+                    <a href="#">
+                        <div class="table-row">
                             <div class="serial">{{ $i++ }}</div>
                             <div class="percentage">{{ $recruiting->title }}</div>
                             <div class="country">{{ $recruiting->department }}</div>
                             <div class="visit">3</div>
                             <div class="country">{{ $recruiting->location }}</div>
                             <div class="country">{{ formatDate($recruiting->updated_at) }}</div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 @empty
                     <div class="table-row">
                         Không có tin tuyển dụng nào !
