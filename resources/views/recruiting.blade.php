@@ -20,7 +20,7 @@
                 <div class="active-exibition-carusel">
                     @forelse($recruitings as $recruiting)
                         <div class="single-exibition item">
-                            <img src="img/e1.jpg" alt="">
+                            <img src="{{ asset(Voyager::image($project->thumbnail('medium'))) }}" alt="">
                             <ul class="tags">
                                 <li><a href="#">{{ $recruiting->tag }}</a></li>
                             </ul>
@@ -54,7 +54,8 @@
                     <a href="#">
                         <div class="table-row">
                             <div class="serial">{{ $i++ }}</div>
-                            <div class="percentage">{{ $recruiting->title }}</div>
+                            <div class="percentage"><img src="{{ asset(Voyager::image($project->thumbnail('small'))) }}" alt="flag">
+                                {{ $recruiting->title }}</div>
                             <div class="country">{{ $recruiting->department }}</div>
                             <div class="visit">3</div>
                             <div class="country">{{ $recruiting->location }}</div>
