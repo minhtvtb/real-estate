@@ -44,10 +44,10 @@
                 <div class="table-head">
                     <div class="serial">#</div>
                     <div class="country">Vị trí tuyển dụng</div>
-                    <div class="country">Phòng ban/Đơn vị</div>
-                    <div class="visit">Số lượng</div>
-                    <div class="visit">Địa điểm</div>
-                    <div class="visit">Hạn nộp hồ sơ</div>
+                    <div class="serial">Phòng ban/Đơn vị</div>
+                    <div class="serial">Số lượng</div>
+                    <div class="serial">Địa điểm</div>
+                    <div class="serial">Hạn nộp hồ sơ</div>
                 </div>
                 @php($i = 1)
                 @forelse($recruitings as $recruiting)
@@ -58,10 +58,10 @@
                                 <img src="{{ asset(Voyager::image($recruiting->thumbnail('small'))) }}" alt="flag">
                                 {{ $recruiting->title }}
                             </div>
-                            <div class="country">{{ $recruiting->department }}</div>
-                            <div class="visit">3</div>
-                            <div class="visit">{{ $recruiting->location }}</div>
-                            <div class="visit">{{ formatDate($recruiting->updated_at) }}</div>
+                            <div class="serial">{{ $recruiting->department }}</div>
+                            <div class="serial">3</div>
+                            <div class="serial">{{ $recruiting->location }}</div>
+                            <div class="serial">{{ formatDate($recruiting->updated_at) }}</div>
                         </div>
                     </a>
                 @empty
