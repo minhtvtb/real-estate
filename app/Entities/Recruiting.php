@@ -5,6 +5,7 @@ namespace App\Entities;
 use Illuminate\Database\Eloquent\Model;
 use Prettus\Repository\Contracts\Transformable;
 use Prettus\Repository\Traits\TransformableTrait;
+use TCG\Voyager\Traits\Resizable;
 
 /**
  * Class Recruiting.
@@ -14,6 +15,7 @@ use Prettus\Repository\Traits\TransformableTrait;
 class Recruiting extends Model implements Transformable
 {
     use TransformableTrait;
+    use Resizable;
 
     /**
      * The attributes that are mass assignable.
