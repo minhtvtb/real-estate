@@ -13,19 +13,20 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/gioi-thieu', function (){
+Route::get('/gioi-thieu', function () {
     return view('about');
 })->name('about');
 
-Route::prefix('/du-an')
-    ->group(function (){
-        Route::get('/', 'ProjectsController@index')->name('projects');
-        Route::get('{type}/{slug}', 'PostsController@index')->name('projects.detail');
-    });
-Route::get('/ygm-tv', function (){
+Route::get('/ygm-tv', function () {
     return view('blog');
 })->name('blog');
 
+Route::get('tuyen_dung', 'RecruitingController@index')->name('recruiting');
+
+Route::prefix('/du-an')->group(function () {
+    Route::get('/', 'ProjectsController@index')->name('projects');
+    Route::get('{type}/{slug}', 'PostsController@index')->name('projects.detail');
+});
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

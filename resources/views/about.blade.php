@@ -85,7 +85,7 @@
                             Chúng tôi phát triển dự án, không chỉ ở những mét vuông xây dựng mà góp phần kiến tạo cộng đồng nhân văn tiên tiến, có phong cách sống hiện đại với nhiều tiện ích, qua đó tạo nên giá trị sống gia tăng bền vững cho mình và cho xã hội.
                         </p>
                         <h5>Giá trị cốt lõi</h5>
-                        <ul style="list-style: circle">
+                        <ul class="unordered-list">
                             <li>Cam kết chất lượng dịch vụ</li>
                             <li>Phục vụ khách hàng tận tâm - chuyên nghiệp</li>
                             <li>Môi trường làm việc thân thiện tạo nhiều cơ hội phát triển</li>

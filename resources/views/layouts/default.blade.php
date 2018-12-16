@@ -63,11 +63,11 @@
                     <li><a href="{{ route('about') }}">Giới thiệu</a></li>
                     <li><a href="{{ route('projects') }}">Dự án</a></li>
                     <li><a href="#">Đối tác</a></li>
-                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="{{ route('recruiting') }}">Tuyển dụng</a></li>
                     <li><a href="{{ route('blog') }}">YGM TV</a></li>
                     <li class="menu-has-children"><a href="#">Liên Hệ</a>
                         <ul>
-                            <li><a href="#">Tuyển dụng</a></li>
+                            <li><a href="{{ route('recruiting') }}">Tuyển dụng</a></li>
                             <li><a href="#">Thông tin nhân sự</a></li>
                             <li><a href="#">Thông tin liên lạc</a></li>
                         </ul>
