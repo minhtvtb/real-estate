@@ -21,7 +21,7 @@ Route::get('/ygm-tv', function () {
     return view('blog');
 })->name('blog');
 
-Route::get('tuyen_dung', 'RecruitingController@index')->name('recruiting');
+Route::get('tuyen-dung', 'RecruitingController@index')->name('recruiting');
 
 Route::prefix('/du-an')->group(function () {
     Route::get('/', 'ProjectsController@index')->name('projects');

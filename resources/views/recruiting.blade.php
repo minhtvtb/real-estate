@@ -18,124 +18,62 @@
             </div>
             <div class="row">
                 <div class="active-exibition-carusel">
+                    @forelse($recruitings as $recruiting)
                     <div class="single-exibition item">
                         <img src="img/e1.jpg" alt="">
                         <ul class="tags">
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Life style</a></li>
+                            <li><a href="#">{{ $recruiting->tag }}</a></li>
                         </ul>
-                        <a href="#"><h4>Portable latest blog for women</h4></a>
-                        <p>
-                            Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+                        <a href="#"><h4>{{ $recruiting->title }}</h4></a>
+                        <p class="limited-text">
+                            {{ $recruiting->excerpt }}
                         </p>
-                        <h6 class="date">31st January, 2018</h6>
+                        <h6 class="date">{{ formatDate($recruiting->updated_at) }}</h6>
                     </div>
-
-                    <div class="single-exibition item">
-                        <img src="img/e2.jpg" alt="">
-                        <ul class="tags">
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Life style</a></li>
-                        </ul>
-                        <a href="#"><h4>Portable latest blog for women</h4></a>
-                        <p>
-                            Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                        </p>
-                        <h6 class="date">31st January, 2018</h6>
-                    </div>
-
-                    <div class="single-exibition item">
-                        <img src="img/e3.jpg" alt="">
-                        <ul class="tags">
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Life style</a></li>
-                        </ul>
-                        <a href="#"><h4>Portable latest blog for women</h4></a>
-                        <p>
-                            Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                        </p>
-                        <h6 class="date">31st January, 2018</h6>
-                    </div>
-                    <div class="single-exibition item">
-                        <img src="img/e1.jpg" alt="">
-                        <ul class="tags">
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Life style</a></li>
-                        </ul>
-                        <a href="#"><h4>Portable latest blog for women</h4></a>
-                        <p>
-                            Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                        </p>
-                        <h6 class="date">31st January, 2018</h6>
-                    </div>
-
-                    <div class="single-exibition item">
-                        <img src="img/e2.jpg" alt="">
-                        <ul class="tags">
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Life style</a></li>
-                        </ul>
-                        <a href="#"><h4>Portable latest blog for women</h4></a>
-                        <p>
-                            Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                        </p>
-                        <h6 class="date">31st January, 2018</h6>
-                    </div>
-
-                    <div class="single-exibition item">
-                        <img src="img/e3.jpg" alt="">
-                        <ul class="tags">
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Life style</a></li>
-                        </ul>
-                        <a href="#"><h4>Portable latest blog for women</h4></a>
-                        <p>
-                            Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                        </p>
-                        <h6 class="date">31st January, 2018</h6>
-                    </div>
-                    <div class="single-exibition item">
-                        <img src="img/e1.jpg" alt="">
-                        <ul class="tags">
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Life style</a></li>
-                        </ul>
-                        <a href="#"><h4>Portable latest blog for women</h4></a>
-                        <p>
-                            Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                        </p>
-                        <h6 class="date">31st January, 2018</h6>
-                    </div>
-
-                    <div class="single-exibition item">
-                        <img class="img-fluid" src="img/e2.jpg" alt="">
-                        <ul class="tags">
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Life style</a></li>
-                        </ul>
-                        <a href="#"><h4>Portable latest blog for women</h4></a>
-                        <p>
-                            Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                        </p>
-                        <h6 class="date">31st January, 2018</h6>
-                    </div>
-
-                    <div class="single-exibition item">
-                        <img class="img-fluid" src="img/e3.jpg" alt="">
-                        <ul class="tags">
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Life style</a></li>
-                        </ul>
-                        <a href="#"><h4>Portable latest blog for women</h4></a>
-                        <p>
-                            Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
-                        </p>
-                        <h6 class="date">31st January, 2018</h6>
-                    </div>
+                    @empty
+                        <div class="single-exibition item"></div>
+                    @endforelse
                 </div>
             </div>
         </div>
     </section>
+    <div class="section-top-border">
+        <h3 class="mb-30 text-center">Tất cả tin tuyển dụng</h3>
+        <div class="progress-table-wrap">
+            <div class="progress-table">
+                <div class="table-head">
+                    <div class="serial">#</div>
+                    <div class="percentage">Vị trí tuyển dụng</div>
+                    <div class="country">Phòng ban/Đơn vị</div>
+                    <div class="visit">Số lượng</div>
+                    <div class="country">Địa điểm</div>
+                    <div class="country">Hạn nộp hồ sơ</div>
+                </div>
+                <div class="active-exibition-carusel">
+                    @php($i = 1)
+                    @forelse($recruitings as $recruiting)
+                        <a href="#">
+                            <div class="table-row">
+                                <div class="serial">{{ $i++ }}</div>
+                                <div class="percentage">{{ $recruiting->title }}</div>
+                                <div class="country">{{ $recruiting->department }}</div>
+                                <div class="visit">3</div>
+                                <div class="country">{{ $recruiting->location }}</div>
+                                <div class="country">{{ formatDate($recruiting->updated_at) }}</div>
+                            </div>
+                        </a>
+                    @empty
+                        <a href="#">
+                            <div class="table-row">
+                                Không có tin tuyển dụng nào !
+                            </div>
+                        </a>
+                    @endforelse
+                </div>
+
+            </div>
+        </div>
+    </div>
 @endsection
 @section('script')
     <script src="{{ asset('js/frontend/recruiting.js') }}"></script>
