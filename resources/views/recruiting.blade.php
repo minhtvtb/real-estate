@@ -61,7 +61,7 @@
                             <div class="serial">{{ $recruiting->department }}</div>
                             <div class="serial">3</div>
                             <div class="serial">{{ $recruiting->location }}</div>
-                            <div class="serial">{{ formatDate($recruiting->updated_at) }}</div>
+                            <div class="serial">{{ formatDate($recruiting->expired) }}</div>
                         </div>
                     </a>
                 @empty
