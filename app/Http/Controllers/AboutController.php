@@ -16,7 +16,7 @@ class AboutController extends Controller
 
     public function index()
     {
-        $settings = $this->settingsRepository->all();
+        $settings = $this->settingsRepository->all()->first();
         return view('about', compact('settings'));
     }
 }

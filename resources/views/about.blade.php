@@ -66,7 +66,7 @@
                 </div>
                 <div class="col-lg-6 col-md-12 no-padding info-rigth">
                     <div class="info-content">
-                        @if(!empty($settings))
+                        @if(!empty($settings->about))
                             {!! $settings->about !!}
                             @endif
                     </div>
