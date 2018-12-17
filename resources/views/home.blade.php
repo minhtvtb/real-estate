@@ -83,7 +83,7 @@
                 <div class="menu-content pb-70 col-lg-8">
                     <div class="title text-center">
                         <h1 class="mb-10">Blog YGM</h1>
-                        <p>Sunshine Wonder Villas với view sân golf thoáng đãng, nội thất độc bản xa xỷ, hệ thống giao thông ngầm hiện đại, tiện ích trường học hoàng gia.</p>
+                        <p>Hãy tham gia Blog của YGM nơi chia sẻ kiến thức!</p>
                     </div>
                 </div>
             </div>
