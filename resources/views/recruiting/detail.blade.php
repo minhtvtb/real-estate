@@ -11,67 +11,22 @@
             <div class="row">
                 <div class="col-lg-8 post-list blog-post-list">
                     <div class="single-post">
-                        <img class="img-fluid" src="img/blog/p1.jpg" alt="">
+                        <img class="img-fluid" src="{{ Voyager::image($recruiting->thumbnail('medium')) }}" alt="">
                         <ul class="tags">
-                            <li><a href="#">Art</a></li>
-                            <li><a href="#">Technology</a></li>
-                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">{{ $recruiting->tag }}</a></li>
                         </ul>
                         <a href="#">
-                            <h1>
-                                Cartridge Is Better Than Ever
-                                A Discount Toner
-                            </h1>
+                            <h1> {{ $recruiting->title }} </h1>
                         </a>
                         <div class="content-wrap">
-                            <p>
-                                MCSE boot camps have its supporters and its detractors. Some people do not understand
-                                why you should have to spend money on boot camp when you can get the MCSE study
-                                materials yourself at a fraction of the camp price. However, who has the willpower to
-                                actually sit through a self-imposed MCSE training. who has the willpower to actually sit
-                                through a self-imposed MCSE training.
-                            </p>
-
-                            <p>
-                                MCSE boot camps have its supporters and its detractors. Some people do not understand
-                                why you should have to spend money on boot camp when you can get the MCSE study
-                                materials yourself at a fraction of the camp price. However, who has the willpower to
-                                actually sit through a self-imposed MCSE training. who has the willpower to actually sit
-                                through a self-imposed MCSE training.
-                            </p>
-
-                            <blockquote class="generic-blockquote">
-                                “Recently, the US Federal government banned online casinos from operating in America by
-                                making it illegal to transfer money to them through any US bank or payment system. As a
-                                result of this law, most of the popular online casino networks such as Party Gaming and
-                                PlayTech left the United States. Overnight, online casino players found themselves being
-                                chased by the Federal government.banking”
-                            </blockquote>
-
-                            <p>
-                                MCSE boot camps have its supporters and its detractors. Some people do not understand
-                                why you should have to spend money on boot camp when you can get the MCSE study
-                                materials yourself at a fraction of the camp price. However, who has the willpower to
-                                actually sit through a self-imposed MCSE training. who has the willpower to actually sit
-                                through a self-imposed MCSE training.
-                            </p>
-
-                            <p>
-                                MCSE boot camps have its supporters and its detractors. Some people do not understand
-                                why you should have to spend money on boot camp when you can get the MCSE study
-                                materials yourself at a fraction of the camp price. However, who has the willpower to
-                                actually sit through a self-imposed MCSE training. who has the willpower to actually sit
-                                through a self-imposed MCSE training.
-                            </p>
-
-
+                            {!! $recruiting->body !!}
                         </div>
                         <div class="bottom-meta">
                             <div class="user-details row align-items-center">
                                 <div class="comment-wrap col-lg-6 col-sm-6">
                                     <ul>
-                                        <li><a href="#"><span class="lnr lnr-heart"></span> 4 likes</a></li>
-                                        <li><a href="#"><span class="lnr lnr-bubble"></span> 06 Comments</a></li>
+                                        <li><a href="#"><span class="lnr lnr-heart"></span> 4 lượt thích</a></li>
+                                        <li><a href="#"><span class="lnr lnr-bubble"></span> 06 Lượt bình luận</a></li>
                                     </ul>
                                 </div>
                                 <div class="social-wrap col-lg-6">
@@ -79,55 +34,27 @@
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
                                     </ul>
 
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Start nav Area -->
-                        <section class="nav-area pt-50 pb-100">
-                            <div class="container">
-                                <div class="row justify-content-between">
-                                    <div class="col-sm-6 nav-left justify-content-start d-flex">
-                                        <div class="thumb">
-                                            <img src="img/blog/prev.jpg" alt="">
-                                        </div>
-                                        <div class="post-details">
-                                            <p>Prev Post</p>
-                                            <h4 class="text-uppercase"><a href="#">A Discount Toner</a></h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 nav-right justify-content-end d-flex">
-                                        <div class="post-details">
-                                            <p>Prev Post</p>
-                                            <h4 class="text-uppercase"><a href="#">A Discount Toner</a></h4>
-                                        </div>
-                                        <div class="thumb">
-                                            <img src="img/blog/next.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- End nav Area -->
-
                         <!-- Start commentform Area -->
                         <section class="commentform-area pt-80">
                             <div class="container">
-                                <h5 class="pb-50">Leave a Reply</h5>
+                                <h5 class="pb-50">Viết bình luận</h5>
                                 <div class="row flex-row d-flex">
                                     <div class="col-lg-4 col-md-6">
                                         <input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''"
-                                               onblur="this.placeholder = 'Enter your name'"
+                                               onblur="this.placeholder = 'Nhập tên của bạn'"
                                                class="common-input mb-20 form-control" required="" type="text">
                                         <input name="email" placeholder="Enter your email"
                                                onfocus="this.placeholder = ''"
-                                               onblur="this.placeholder = 'Enter your email'"
+                                               onblur="this.placeholder = 'Nhập email của bạn'"
                                                class="common-input mb-20 form-control" required="" type="email">
                                         <input name="Subject" placeholder="Subject" onfocus="this.placeholder = ''"
-                                               onblur="this.placeholder = 'Enter your Subject'"
+                                               onblur="this.placeholder = 'Nhập tiêu đề bình luận'"
                                                class="common-input mb-20 form-control" required="" type="text">
 
                                     </div>
@@ -135,7 +62,7 @@
                                         <textarea class="form-control mb-10" name="message" placeholder="Messege"
                                                   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'"
                                                   required=""></textarea>
-                                        <a class="primary-btn mt-20" href="#">Comment</a>
+                                        <a class="primary-btn mt-20" href="#">Bình luận</a>
                                     </div>
                                 </div>
                             </div>
