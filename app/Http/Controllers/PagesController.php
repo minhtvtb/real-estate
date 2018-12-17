@@ -63,7 +63,8 @@ class PagesController extends Controller
     public function show($slug)
     {
         $page = $this->repository->findWhere(['slug' => $slug])->first();
+        $blogs = $this->repository->all();
 
-        return view('blog.detail', compact('page'));
+        return view('blog.detail', compact('page', 'blogs'));
     }
 }
