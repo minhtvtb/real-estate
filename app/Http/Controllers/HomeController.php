@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\PageRepository;
 use App\Repositories\PostRepository;
 use Illuminate\Http\Request;
 
@@ -13,13 +14,20 @@ class HomeController extends Controller
     protected $postRepository;
 
     /**
+     * @var $pageRepository
+     */
+    protected $pageRepository;
+
+    /**
      * PostsController constructor.
      *
      * @param PostRepository $postRepository
+     * @param PageRepository $pageRepository
      */
-    public function __construct(PostRepository $postRepository)
+    public function __construct(PostRepository $postRepository, PageRepository $pageRepository)
     {
         $this->postRepository = $postRepository;
+        $this->pageRepository = $pageRepository;
     }
 
     /**
@@ -30,6 +38,7 @@ class HomeController extends Controller
     public function index()
     {
         $posts = $this->postRepository->findWhere(['status' => 'PUBLISHED']);
+        $blogs = $this->pageRepository->findWhere(['status' => 'ACTIVE']);
 
         if (request()->wantsJson()) {
 
@@ -38,6 +47,6 @@ class HomeController extends Controller
             ]);
         }
 
-        return view('home', compact('posts'));
+        return view('home', compact('posts', 'blogs'));
     }
 }

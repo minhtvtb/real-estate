@@ -88,70 +88,28 @@
                 </div>
             </div>
             <div class="row">
+                @forelse($blogs as $blog)
                 <div class="col-lg-3 col-md-6 single-blog" data-aos="fade-up">
                     <div class="thumb">
-                        <img class="img-fluid" src="img/g8.jpg" alt="">
+                        <img class="img-fluid" src="{{ asset(Voyager::image($blog->thumbnail('medium'))) }}" alt="">
                     </div>
-                    <p class="date">Tháng 10 18</p>
-                    <a href="#">
-                        <h4>Tiêu đề blog Tiêu đề blog Tiêu đề blog </h4>
+                    <p class="date">{{ formatDate($blog->updated_at) }}</p>
+                    <a href="{{ route('blog.detail', ['slug' => $blog->slug]) }}">
+                        <h4>{{ $blog->title }}</h4>
                     </a>
-                    <p>
-                        nội dung blog tóm tắt nội dung blog tóm tắt nội dung blog tóm tắt nội dung blog tóm tắt
+                    <p class="limited-text">
+                        {{ $blog->excerpt }}
                     </p>
                     <div class="meta-bottom d-flex justify-content-between">
                         <p><span class="lnr lnr-heart"></span> 15 Likes</p>
                         <p><span class="lnr lnr-bubble"></span> 02 Bình luận</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 single-blog" data-aos="fade-up">
-                    <div class="thumb">
-                        <img class="img-fluid" src="img/g8.jpg" alt="">
+                @empty
+                    <div class="col-lg-3 col-md-6 single-blog" data-aos="fade-up">
+                        Không có bài viết blog nào !
                     </div>
-                    <p class="date">Tháng 10 18</p>
-                    <a href="#">
-                        <h4>Tiêu đề blog Tiêu đề blog Tiêu đề blog </h4>
-                    </a>
-                    <p>
-                        nội dung blog tóm tắt nội dung blog tóm tắt nội dung blog tóm tắt nội dung blog tóm tắt
-                    </p>
-                    <div class="meta-bottom d-flex justify-content-between">
-                        <p><span class="lnr lnr-heart"></span> 15 Likes</p>
-                        <p><span class="lnr lnr-bubble"></span> 02 Bình luận</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 single-blog" data-aos="fade-up">
-                    <div class="thumb">
-                        <img class="img-fluid" src="img/g8.jpg" alt="">
-                    </div>
-                    <p class="date">Tháng 10 18</p>
-                    <a href="#">
-                        <h4>Tiêu đề blog Tiêu đề blog Tiêu đề blog </h4>
-                    </a>
-                    <p>
-                        nội dung blog tóm tắt nội dung blog tóm tắt nội dung blog tóm tắt nội dung blog tóm tắt
-                    </p>
-                    <div class="meta-bottom d-flex justify-content-between">
-                        <p><span class="lnr lnr-heart"></span> 15 Likes</p>
-                        <p><span class="lnr lnr-bubble"></span> 02 Bình luận</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 single-blog" data-aos="fade-up">
-                    <div class="thumb">
-                        <img class="img-fluid" src="img/g8.jpg" alt="">
-                    </div>
-                    <p class="date">Tháng 10 18</p>
-                    <a href="#">
-                        <h4>Tiêu đề blog Tiêu đề blog Tiêu đề blog </h4>
-                    </a>
-                    <p>
-                        nội dung blog tóm tắt nội dung blog tóm tắt nội dung blog tóm tắt nội dung blog tóm tắt
-                    </p>
-                    <div class="meta-bottom d-flex justify-content-between">
-                        <p><span class="lnr lnr-heart"></span> 15 Likes</p>
-                        <p><span class="lnr lnr-bubble"></span> 02 Bình luận</p>
-                    </div>
-                </div>
+                @endforelse
             </div>
         </div>
     </section>

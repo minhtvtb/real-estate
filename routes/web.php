@@ -17,9 +17,10 @@ Route::get('gioi-thieu', function () {
     return view('about');
 })->name('about');
 
-Route::get('ygm-tv', function () {
-    return view('blog');
-})->name('blog');
+Route::prefix('ygm-tv')->group(function (){
+    Route::get('/', 'PagesController@index')->name('blog');
+    Route::get('bai-viet/{slug}', 'PagesController@show')->name('blog.detail');
+});
 
 Route::prefix('tuyen-dung')->group(function (){
     Route::get('/', 'RecruitingController@index')->name('recruiting');
