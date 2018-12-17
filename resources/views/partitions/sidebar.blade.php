@@ -10,7 +10,7 @@
         <img src="{{ asset('img/logo.png') }}" width="150" alt="">
         <a href="#"><h4>Sàn Bất động sản YGM</h4></a>
         <p>
-            Là tiền thân của Hanoiland, một công ty đã từng có hơn 10 năm kinh nghiệm
+            Tiền thân là một phần của Hanoiland, một công ty đã từng có hơn 10 năm kinh nghiệm
             trong lĩnh vực bất động sản nên khi tách ra hoạt động riêng vào năm 2016 thì
             YGM trở thành một trong những công ty có nhiều uy tín trong lĩnh vực đầu tư
             và phát triển bất động sản. Và đến nay, YGM đã vươn lên thành một Tập đoàn
