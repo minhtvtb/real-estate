@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-lg-8 post-list blog-post-list">
                     <div class="single-post">
-                        <img class="img-fluid" src="{{ Voyager::image($recruiting->thumbnail('medium')) }}" alt="">
+                        <img class="img-fluid" src="{{ Voyager::image($recruiting->thumbnail('cropped')) }}" alt="">
                         <ul class="tags">
                             <li><a href="#">{{ $recruiting->tag }}</a></li>
                         </ul>
@@ -46,21 +46,21 @@
                                 <h5 class="pb-50">Viết bình luận</h5>
                                 <div class="row flex-row d-flex">
                                     <div class="col-lg-4 col-md-6">
-                                        <input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''"
+                                        <input name="name" placeholder="Nhập tên của bạn" onfocus="this.placeholder = ''"
                                                onblur="this.placeholder = 'Nhập tên của bạn'"
                                                class="common-input mb-20 form-control" required="" type="text">
-                                        <input name="email" placeholder="Enter your email"
+                                        <input name="email" placeholder="Nhập email của bạn"
                                                onfocus="this.placeholder = ''"
                                                onblur="this.placeholder = 'Nhập email của bạn'"
                                                class="common-input mb-20 form-control" required="" type="email">
-                                        <input name="Subject" placeholder="Subject" onfocus="this.placeholder = ''"
+                                        <input name="Subject" placeholder="Nhập tiêu đề bình luận" onfocus="this.placeholder = ''"
                                                onblur="this.placeholder = 'Nhập tiêu đề bình luận'"
                                                class="common-input mb-20 form-control" required="" type="text">
 
                                     </div>
                                     <div class="col-lg-8 col-md-6">
-                                        <textarea class="form-control mb-10" name="message" placeholder="Messege"
-                                                  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'"
+                                        <textarea class="form-control mb-10" name="message" placeholder="Nội dung"
+                                                  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nội dung'"
                                                   required=""></textarea>
                                         <a class="primary-btn mt-20" href="#">Bình luận</a>
                                     </div>
