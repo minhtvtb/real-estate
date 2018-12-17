@@ -22,9 +22,11 @@
                         <div class="single-exibition item">
                             <img src="{{ asset(Voyager::image($recruiting->thumbnail('medium'))) }}" alt="">
                             <ul class="tags">
-                                <li><a href="#">{{ $recruiting->tag }}</a></li>
+                                <li><a href="javascript:;">{{ $recruiting->tag }}</a></li>
                             </ul>
-                            <a href="#"><h4>{{ $recruiting->title }}</h4></a>
+                            <a href="{{ route('recruiting.detail', ['slug' => $recruiting->slug]) }}">
+                                <h4>{{ $recruiting->title }}</h4>
+                            </a>
                             <p class="limited-text">
                                 {{ $recruiting->excerpt }}
                             </p>
@@ -51,7 +53,7 @@
                 </div>
                 @php($i = 1)
                 @forelse($recruitings as $recruiting)
-                    <a href="#">
+                    <a href="{{ route('recruiting.detail', ['slug' => $recruiting->slug]) }}">
                         <div class="table-row">
                             <div class="serial">{{ $i++ }}</div>
                             <div class="country">

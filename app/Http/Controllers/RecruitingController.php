@@ -20,4 +20,11 @@ class RecruitingController extends Controller
 
         return view('recruiting', compact('recruitings'));
     }
+
+    public function detail($slug)
+    {
+        $recruiting = $this->recruitingRepository->findWhere(['slug' => $slug])->first();
+
+        return view('recruiting.detail', compact('recruiting'));
+    }
 }
