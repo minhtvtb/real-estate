@@ -29,9 +29,9 @@
                                 <h4>{{ $project->title }}</h4>
                             </a>
                             <p class="limited-text">{{ $project->quy_mo_content }}</p>
-                            <div class="meta-bottom d-flex justify-content-start">
-                                <p class="price">Từ {{ !empty($project->price) ? $project->price : '3 - 5 tỷ' }}</p>
-                            </div>
+                            {{--<div class="meta-bottom d-flex justify-content-start">--}}
+                                {{--<p class="price">Từ {{ !empty($project->price) ? $project->price : '3 - 5 tỷ' }}</p>--}}
+                            {{--</div>--}}
                         </div>
                     @endif
                 @empty
@@ -45,9 +45,9 @@
                             Với mục tiêu đem đến cho khách hàng một không gian sống đẳng cấp, DOJI còn mang đến một thiên đường
                             nghỉ dưỡng hàng đầu khu vực.
                         </p>
-                        <div class="meta-bottom d-flex justify-content-start">
-                            <p class="price">Từ 3-5 tỷ</p>
-                        </div>
+                        {{--<div class="meta-bottom d-flex justify-content-start">--}}
+                            {{--<p class="price">Từ 3-5 tỷ</p>--}}
+                        {{--</div>--}}
                     </div>
                 @endforelse
             </div>
@@ -76,9 +76,9 @@
                                 <h4>{{ $project->title }}</h4>
                             </a>
                             <p class="limited-text">{{ $project->quy_mo_content }}</p>
-                            <div class="meta-bottom d-flex justify-content-start">
-                                <p class="price">Từ {{ !empty($project->price) ? $project->price : '3 - 5 tỷ' }}</p>
-                            </div>
+                            {{--<div class="meta-bottom d-flex justify-content-start">--}}
+                                {{--<p class="price">Từ {{ !empty($project->price) ? $project->price : '3 - 5 tỷ' }}</p>--}}
+                            {{--</div>--}}
                         </div>
                     @endif
                 @empty
@@ -92,9 +92,9 @@
                             Với mục tiêu đem đến cho khách hàng một không gian sống đẳng cấp, DOJI còn mang đến một thiên đường
                             nghỉ dưỡng hàng đầu khu vực.
                         </p>
-                        <div class="meta-bottom d-flex justify-content-start">
-                            <p class="price">Từ 3-5 tỷ</p>
-                        </div>
+                        {{--<div class="meta-bottom d-flex justify-content-start">--}}
+                            {{--<p class="price">Từ 3-5 tỷ</p>--}}
+                        {{--</div>--}}
                     </div>
                 @endforelse
             </div>
@@ -123,9 +123,9 @@
                                 <h4>{{ $project->title }}</h4>
                             </a>
                             <p class="limited-text">{{ $project->quy_mo_content }}</p>
-                            <div class="meta-bottom d-flex justify-content-start">
-                                <p class="price">Từ {{ !empty($project->price) ? $project->price : '3 - 5 tỷ' }}</p>
-                            </div>
+                            {{--<div class="meta-bottom d-flex justify-content-start">--}}
+                                {{--<p class="price">Từ {{ !empty($project->price) ? $project->price : '3 - 5 tỷ' }}</p>--}}
+                            {{--</div>--}}
                         </div>
                     @endif
                 @empty
@@ -139,9 +139,9 @@
                             Với mục tiêu đem đến cho khách hàng một không gian sống đẳng cấp, DOJI còn mang đến một thiên đường
                             nghỉ dưỡng hàng đầu khu vực.
                         </p>
-                        <div class="meta-bottom d-flex justify-content-start">
-                            <p class="price">Từ 3-5 tỷ</p>
-                        </div>
+                        {{--<div class="meta-bottom d-flex justify-content-start">--}}
+                            {{--<p class="price">Từ 3-5 tỷ</p>--}}
+                        {{--</div>--}}
                     </div>
                 @endforelse
             </div>
@@ -170,9 +170,9 @@
                                 <h4>{{ $project->title }}</h4>
                             </a>
                             <p class="limited-text">{{ $project->quy_mo_content }}</p>
-                            <div class="meta-bottom d-flex justify-content-start">
-                                <p class="price">Từ {{ !empty($project->price) ? $project->price : '3 - 5 tỷ' }}</p>
-                            </div>
+                            {{--<div class="meta-bottom d-flex justify-content-start">--}}
+                                {{--<p class="price">Từ {{ !empty($project->price) ? $project->price : '3 - 5 tỷ' }}</p>--}}
+                            {{--</div>--}}
                         </div>
                     @endif
                 @empty
@@ -186,9 +186,9 @@
                             Với mục tiêu đem đến cho khách hàng một không gian sống đẳng cấp, DOJI còn mang đến một thiên đường
                             nghỉ dưỡng hàng đầu khu vực.
                         </p>
-                        <div class="meta-bottom d-flex justify-content-start">
-                            <p class="price">Từ 3-5 tỷ</p>
-                        </div>
+                        {{--<div class="meta-bottom d-flex justify-content-start">--}}
+                            {{--<p class="price">Từ 3-5 tỷ</p>--}}
+                        {{--</div>--}}
                     </div>
                 @endforelse
             </div>
@@ -217,9 +217,9 @@
                                 <h4>{{ $project->title }}</h4>
                             </a>
                             <p class="limited-text">{{ $project->quy_mo_content }}</p>
-                            <div class="meta-bottom d-flex justify-content-start">
-                                <p class="price">Từ {{ !empty($project->price) ? $project->price : '3 - 5 tỷ' }}</p>
-                            </div>
+                            {{--<div class="meta-bottom d-flex justify-content-start">--}}
+                                {{--<p class="price">Từ {{ !empty($project->price) ? $project->price : '3 - 5 tỷ' }}</p>--}}
+                            {{--</div>--}}
                         </div>
                     @endif
                 @empty
@@ -233,9 +233,9 @@
                             Với mục tiêu đem đến cho khách hàng một không gian sống đẳng cấp, DOJI còn mang đến một thiên đường
                             nghỉ dưỡng hàng đầu khu vực.
                         </p>
-                        <div class="meta-bottom d-flex justify-content-start">
-                            <p class="price">Từ 3-5 tỷ</p>
-                        </div>
+                        {{--<div class="meta-bottom d-flex justify-content-start">--}}
+                            {{--<p class="price">Từ 3-5 tỷ</p>--}}
+                        {{--</div>--}}
                     </div>
                 @endforelse
             </div>
