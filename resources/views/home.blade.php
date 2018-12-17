@@ -32,7 +32,7 @@
     </section>
     <!-- End banner  -->
     <!-- Start upcoming-event  -->
-    <section class="upcoming-event-area section-gap" id="events" data-aos="fade-down">
+    <section class="upcoming-event-area section-gap project" id="events" data-aos="fade-down">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-60 col-lg-10">
@@ -49,7 +49,7 @@
                         @if($post)
                             <div class="single-events" data-aos="fade-right">
                                 <img class="img-fluid" src="{{ asset(Voyager::image($post->thumbnail('cropped'))) }}" alt=""style="width: 530px">
-                                <a href="#"><h4>{{ $post->title }}</h4></a>
+                                <a href="#"><h4 style="color: #00992b">{{ $post->title }}</h4></a>
                                 <h6><span>{{ formatDate($post->updated_at) }}</span> tại {{ $post->location }}</h6>
                                 <p class="limited-text">{{ $post->quy_mo_content }}</p>
                                 <a href="{{ route('projects.detail', ['type' => $post->category->slug, 'slug' => $post->slug]) }}" class="primary-btn text-uppercase">
@@ -64,7 +64,7 @@
                         @php($post = isset($posts[$i]) ? $posts[$i] : null)
                         @if($post)
                             <div class="single-events" data-aos="fade-left">
-                                <a href="#"><h4>{{ $post->title }}</h4></a>
+                                <a href="#"><h4 style="color: #00992b">{{ $post->title }}</h4></a>
                                 <h6><span>{{ formatDate($post->updated_at) }}</span> tại {{ $post->location }}</h6>
                                 <p class="limited-text">{{ $post->quy_mo_content }}</p>
                                 <a href="{{ route('projects.detail', ['type' => $post->category->slug, 'slug' => $post->slug]) }}" class="primary-btn text-uppercase">Thông tin chi tiết</a>

@@ -1,4 +1,4 @@
-.slick-slide{
+.slick-slide {
     display: none;
     float: left;
     height: auto;
@@ -9,13 +9,18 @@
     max-width: 174px !important;
 }
 
-.customer-logo, .customer-logo-wrap{
+.customer-logo, .customer-logo-wrap {
     background-color: #eeeeee;
 }
 
-.limited-text{
+.limited-text {
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width:540px;
+    max-width: 540px;
     max-height: 70px;
+    color: black;
+}
+
+.project {
+    background-color: aliceblue
 }
