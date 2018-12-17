@@ -6,8 +6,8 @@
     <section class="blog-posts-area section-gap">
         <div class="container">
             <div class="row">
-                @forelse($blogs as $blog)
                 <div class="col-lg-8 post-list blog-post-list">
+                    @forelse($blogs as $blog)
                     <div class="single-post">
                         <img class="img-fluid" src="{{ Voyager::image($blog->thumbnail('cropped')) }}" alt="">
                         <a href="{{ route('blog.detail', ['slug' => $blog->slug]) }}">
@@ -33,12 +33,12 @@
                             </div>
                         </div>
                     </div>
+                    @empty
+                        <div class="single-post">
+                            Không có bài viết nào, mời bạn quay lại sau !
+                        </div>
+                    @endforelse
                 </div>
-                @empty
-                    <div class="col-lg-8 post-list blog-post-list">
-                        Không có bài viết nào, mời bạn quay lại sau !
-                    </div>
-                @endforelse
                 @include('partitions.sidebar')
             </div>
         </div>
