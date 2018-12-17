@@ -13,9 +13,7 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('gioi-thieu', function () {
-    return view('about');
-})->name('about');
+Route::get('gioi-thieu', 'AboutController@index')->name('about');
 
 Route::prefix('ygm-tv')->group(function (){
     Route::get('/', 'PagesController@index')->name('blog');

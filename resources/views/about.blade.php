@@ -66,31 +66,9 @@
                 </div>
                 <div class="col-lg-6 col-md-12 no-padding info-rigth">
                     <div class="info-content">
-                        <h2 class="pb-30">Chúng tôi tin rằng<br>
-                            bạn có nhà đẹp <br>
-                            bạn thêm hạnh phúc!</h2>
-                        <h5>Thành lập</h5>
-                        <p>
-                            Là tiền thân của HaNoiLand, đã từng có hơn 10 năm kinh nghiệm trong lĩnh vực bất động sản.
-                            Và mới được tách ra từ năm 2016.
-                            Hiện nay, YGM là một trong những công ty có nhiều uy tín trong lĩnh vực đầu tư và phát triển bất động sản
-
-                        </p>
-                        <h5>Tầm nhìn</h5>
-                        <p>
-                            Là một Tập đoàn bất động sản đẳng cấp quốc tế, vị thế cao, phát triển vững mạnh, góp phần mang lại cuộc sống hạnh phúc và thịnh vượng cho cộng đồng.
-                        </p>
-                        <h5>Sứ mạng</h5>
-                        <p>
-                            Chúng tôi phát triển dự án, không chỉ ở những mét vuông xây dựng mà góp phần kiến tạo cộng đồng nhân văn tiên tiến, có phong cách sống hiện đại với nhiều tiện ích, qua đó tạo nên giá trị sống gia tăng bền vững cho mình và cho xã hội.
-                        </p>
-                        <h5>Giá trị cốt lõi</h5>
-                        <ul class="unordered-list">
-                            <li>Cam kết chất lượng dịch vụ</li>
-                            <li>Phục vụ khách hàng tận tâm - chuyên nghiệp</li>
-                            <li>Môi trường làm việc thân thiện tạo nhiều cơ hội phát triển</li>
-                            <li>Trung thực, uy tín, tôn trọng đạo đức kinh doanh.</li>
-                        </ul>
+                        @if(!empty($settings))
+                            {!! $settings->about !!}
+                            @endif
                     </div>
                 </div>
             </div>
