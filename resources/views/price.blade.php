@@ -194,7 +194,16 @@
             </div>
         </div>
     </section>
+    @php
+    $show = false;
+        foreach ($projects as $project){
+            if ($project->category->order == '4') {
+            $show = true;
+            }
+        }
+    @endphp
 
+    @if($show)
     <section class="upcoming-exibition-area section-gap">
         <div class="container">
             <div class="row d-flex justify-content-center" data-aos="fade-down">
@@ -241,6 +250,7 @@
             </div>
         </div>
     </section>
+    @endif
     <!-- End upcoming-exibition Area -->
 @endsection
 @section('script')
