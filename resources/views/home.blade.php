@@ -23,9 +23,9 @@
                     <h1 class="text-white">
                         <span style="color: rgb(255,215,0); font-size: 100px">YGM</span> Group
                     </h1>
-                    <p class="pt-20 pb-20 text-white banner-text-content">
+                    <h3 class="pt-20 pb-20 text-white banner-text-content">
                         Nơi niềm tin tạo dựng
-                    </p>
+                    </h3>
                 </div>
             </div>
         </div>
