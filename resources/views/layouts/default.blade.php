@@ -91,13 +91,16 @@
                         Chúng tôi phát triển dự án, không chỉ ở những mét vuông xây dựng mà góp phần kiến tạo cộng đồng nhân văn tiên tiến, có phong cách sống hiện đại với nhiều tiện ích, qua đó tạo nên giá trị sống gia tăng bền vững cho mình và cho xã hội.
                     </p>
                     <p>
-                        Địa chỉ: Tầng 9 toà nhà Detech - 107 Nguyễn Phong Sắc, Cầu Giấy, Hà Nội
+                        <span style="color: #0e3950">Email:</span> ygmland@gmail.com
                     </p>
                     <p>
-                        Email: ygmland@gmail.com
+                        Liên hệ: <a href="tel:+84971262223">0971.262.223</a>
                     </p>
                     <p>
-                        <a href="tel:+84971262223">Liên hệ: 0971.262.223</a>
+                        website: <a href="http://ygm.com.vn">ygm.com.vn</a>
+                    </p>
+                    <p>
+                        <span style="color: #0e3950">Địa chỉ:</span> Tầng 9 toà nhà Detech - 107 Nguyễn Phong Sắc, Cầu Giấy, Hà Nội
                     </p>
                     <p class="footer-text">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
