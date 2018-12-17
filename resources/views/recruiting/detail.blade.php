@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-    @include('partitions.banner', ['pageTitle' => $recruiting->title, 'routeName' => 'recruiting.detail'])
+    @include('partitions.banner', ['pageTitle' => $recruiting->title, 'routeName' => 'recruiting'])
 
     <section class="blog-posts-area section-gap">
         <div class="container">
