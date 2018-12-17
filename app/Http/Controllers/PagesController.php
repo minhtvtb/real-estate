@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\SettingsRepository;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -29,16 +30,20 @@ class PagesController extends Controller
      */
     protected $validator;
 
+    protected $settingRepository;
+
     /**
      * PagesController constructor.
      *
      * @param PageRepository $repository
      * @param PageValidator $validator
+     * @param SettingsRepository $settingsRepository
      */
-    public function __construct(PageRepository $repository, PageValidator $validator)
+    public function __construct(PageRepository $repository, PageValidator $validator, SettingsRepository $settingsRepository)
     {
         $this->repository = $repository;
         $this->validator  = $validator;
+        $this->settingRepository = $settingsRepository;
     }
 
     /**
@@ -49,8 +54,9 @@ class PagesController extends Controller
     public function index()
     {
         $blogs = $this->repository->all();
+        $settings = $this->settingRepository->all()->first();
 
-        return view('blog', compact('blogs'));
+        return view('blog', compact('blogs', 'settings'));
     }
 
     /**
@@ -64,7 +70,8 @@ class PagesController extends Controller
     {
         $page = $this->repository->findWhere(['slug' => $slug])->first();
         $blogs = $this->repository->all();
+        $settings = $this->settingRepository->all()->first();
 
-        return view('blog.detail', compact('page', 'blogs'));
+        return view('blog.detail', compact('page', 'blogs', 'settings'));
     }
 }

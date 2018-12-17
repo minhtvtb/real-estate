@@ -9,14 +9,9 @@
     <div class="single-widget protfolio-widget">
         <img src="{{ asset('img/logo.png') }}" width="150" alt="">
         <a href="#"><h4>Sàn Bất động sản YGM</h4></a>
-        <p>
-            Tiền thân là một phần của Hanoiland, một công ty đã từng có hơn 10 năm kinh nghiệm
-            trong lĩnh vực bất động sản nên khi tách ra hoạt động riêng vào năm 2016 thì
-            YGM trở thành một trong những công ty có nhiều uy tín trong lĩnh vực đầu tư
-            và phát triển bất động sản. Và đến nay, YGM đã vươn lên thành một Tập đoàn
-            bất động sản đẳng cấp quốc tế, vị thế cao, phát triển vững mạnh, góp phần
-            mang lại cuộc sống hạnh phúc và thịnh vượng cho cộng đồng.
-        </p>
+        @if(!empty($settings->about_sidebar))
+            {!! $settings->about_sidebar !!}
+        @endif
         <ul>
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
