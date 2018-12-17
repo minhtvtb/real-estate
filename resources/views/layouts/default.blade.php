@@ -88,7 +88,16 @@
                 <div class="single-footer-widget">
                     <h6>Về chúng tôi</h6>
                     <p>
-                        Là thành viên của HÀ NỘI LAND đã hoạt động trong lĩnh vực bất động sản trên 10 năm, chúng tôi tự tin cung cấp cho bạn dịch vụ tốt nhất và sự yên tâm tuyệt đối.
+                        Chúng tôi phát triển dự án, không chỉ ở những mét vuông xây dựng mà góp phần kiến tạo cộng đồng nhân văn tiên tiến, có phong cách sống hiện đại với nhiều tiện ích, qua đó tạo nên giá trị sống gia tăng bền vững cho mình và cho xã hội.
+                    </p>
+                    <p>
+                        Địa chỉ: Tầng 9 toà nhà Detech - 107 Nguyễn Phong Sắc, Cầu Giấy, Hà Nội
+                    </p>
+                    <p>
+                        Email: ygmland@gmail.com
+                    </p>
+                    <p>
+                        <a href="tel:+84971262223">Liên hệ: 0971.262.223</a>
                     </p>
                     <p class="footer-text">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
