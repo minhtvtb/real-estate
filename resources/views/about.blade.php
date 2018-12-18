@@ -54,7 +54,7 @@
                 <div class="menu-content pb-40 col-lg-8">
                     <div class="title text-center">
                         <h1 class="mb-10">Thông tin về Công ty</h1>
-                        <p>Giới thiệu về sản Bất động sản YGM!</p>
+                        <p>Giới thiệu về sàn Bất động sản YGM!</p>
                     </div>
                 </div>
             </div>
