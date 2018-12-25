@@ -11,3 +11,9 @@ if (!function_exists('formatDate')) {
         return date('d/m/Y', strtotime($inputString));
     }
 }
+if (!function_exists('settings')) {
+    function getSetting($key)
+    {
+        return \App\Entities\SetupInfo::where('key', $key)->all();
+    }
+}

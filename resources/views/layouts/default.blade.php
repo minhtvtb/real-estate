@@ -38,8 +38,8 @@
             <div class="col-6 top-head-right">
                 <ul>
                     <li>
-                        <a href="tel:+84971262223" class="font-weight-bold" style="color: #fca940; font-size: 14px">
-                            Hotline : 0971262223
+                        <a href="tel:{{getSetting('phone')->value}}" class="font-weight-bold" style="color: #fca940; font-size: 14px">
+                            Hotline : {{getSetting('phone')->value}}
                         </a>
                     </li>
                     <li><a href="#" style="font-size: 16px"><i class="fa fa-facebook social-header"></i></a></li>
@@ -94,7 +94,7 @@
                         <span style="color: #0e3950">Email:</span> ygmland@gmail.com
                     </p>
                     <p>
-                        Liên hệ: <a href="tel:+84971262223">0971.262.223</a>
+                        Liên hệ: <a href="tel:{{getSetting('phone')->value}}">{{getSetting('phone')->value}}</a>
                     </p>
                     <p>
                         website: <a href="http://ygm.com.vn">ygm.com.vn</a>
