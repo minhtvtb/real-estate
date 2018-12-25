@@ -14,6 +14,6 @@ if (!function_exists('formatDate')) {
 if (!function_exists('settings')) {
     function getSetting($key)
     {
-        return \App\Entities\SetupInfo::where('key', $key)->all();
+        return \App\Entities\SetupInfo::all()->where('key', $key);
     }
 }
