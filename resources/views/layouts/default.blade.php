@@ -100,7 +100,7 @@
                         website: <a href="http://ygm.com.vn">ygm.com.vn</a>
                     </p>
                     <p>
-                        <span style="color: #0e3950">Địa chỉ:</span> Tầng 9 toà nhà Detech - 107 Nguyễn Phong Sắc, Cầu Giấy, Hà Nội
+                        <span style="color: #0e3950">Địa chỉ:</span> {{ getAddress() }}
                     </p>
                     <p class="footer-text">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->

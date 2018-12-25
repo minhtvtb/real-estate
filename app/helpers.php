@@ -17,3 +17,9 @@ if (!function_exists('getPhoneSetting')) {
         return \App\Entities\SetupInfo::all()->where('key', 'phone')->first()->value;
     }
 }
+if (!function_exists('getAddress')) {
+    function getAddress()
+    {
+        return \App\Entities\SetupInfo::all()->where('key', 'address')->first()->value;
+    }
+}
