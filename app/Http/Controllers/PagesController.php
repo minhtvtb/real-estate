@@ -41,6 +41,7 @@ class PagesController extends Controller
      */
     public function __construct(PageRepository $repository, PageValidator $validator, SettingsRepository $settingsRepository)
     {
+        parent::__construct();
         $this->repository = $repository;
         $this->validator  = $validator;
         $this->settingRepository = $settingsRepository;

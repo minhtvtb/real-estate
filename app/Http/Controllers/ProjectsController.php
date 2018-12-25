@@ -38,6 +38,7 @@ class ProjectsController extends Controller
      */
     public function __construct(PostRepository $repository, ProjectValidator $validator)
     {
+        parent::__construct();
         $this->postRepository = $repository;
         $this->validator  = $validator;
     }

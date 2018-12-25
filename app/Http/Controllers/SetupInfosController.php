@@ -37,6 +37,7 @@ class SetupInfosController extends Controller
      */
     public function __construct(SetupInfoRepository $repository, SetupInfoValidator $validator)
     {
+        parent::__construct();
         $this->repository = $repository;
         $this->validator  = $validator;
     }

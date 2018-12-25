@@ -37,6 +37,7 @@ class SettingsController extends Controller
      */
     public function __construct(SettingsRepository $repository, SettingsValidator $validator)
     {
+        parent::__construct();
         $this->repository = $repository;
         $this->validator  = $validator;
     }

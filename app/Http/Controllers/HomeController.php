@@ -26,6 +26,7 @@ class HomeController extends Controller
      */
     public function __construct(PostRepository $postRepository, PageRepository $pageRepository)
     {
+        parent::__construct();
         $this->postRepository = $postRepository;
         $this->pageRepository = $pageRepository;
     }

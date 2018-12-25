@@ -19,6 +19,7 @@ class RecruitingController extends Controller
         SettingsRepository $settingsRepository
     )
     {
+        parent::__construct();
         $this->recruitingRepository = $recruitingRepository;
         $this->pageRepository = $pageRepository;
         $this->settingsRepository = $settingsRepository;

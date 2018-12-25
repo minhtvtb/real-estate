@@ -37,6 +37,7 @@ class PostsController extends Controller
      */
     public function __construct(PostRepository $repository, PostValidator $validator)
     {
+        parent::__construct();
         $this->repository = $repository;
         $this->validator  = $validator;
     }

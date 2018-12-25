@@ -37,6 +37,7 @@ class TenementHousesController extends Controller
      */
     public function __construct(EenementHouseRepository $repository, EenementHouseValidator $validator)
     {
+        parent::__construct();
         $this->repository = $repository;
         $this->validator  = $validator;
     }
