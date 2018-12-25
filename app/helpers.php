@@ -11,9 +11,9 @@ if (!function_exists('formatDate')) {
         return date('d/m/Y', strtotime($inputString));
     }
 }
-if (!function_exists('settings')) {
-    function getSetting($key)
+if (!function_exists('getPhoneSetting')) {
+    function getPhoneSetting()
     {
-        return \App\Entities\SetupInfo::all()->where('key', $key);
+        return \App\Entities\SetupInfo::all()->where('key', 'phone')->first()->value;
     }
 }

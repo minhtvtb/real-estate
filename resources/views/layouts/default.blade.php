@@ -38,8 +38,8 @@
             <div class="col-6 top-head-right">
                 <ul>
                     <li>
-                        <a href="tel:" class="font-weight-bold" style="color: #fca940; font-size: 14px">
-                            Hotline :
+                        <a href="tel:{{getPhoneSetting()}}" class="font-weight-bold" style="color: #fca940; font-size: 14px">
+                            Hotline : {{getPhoneSetting()}}
                         </a>
                     </li>
                     <li><a href="#" style="font-size: 16px"><i class="fa fa-facebook social-header"></i></a></li>
@@ -94,7 +94,7 @@
                         <span style="color: #0e3950">Email:</span> ygmland@gmail.com
                     </p>
                     <p>
-                        Liên hệ: <a href="tel:"></a>
+                        Liên hệ: <a href="tel:{{getPhoneSetting()}}">{{getPhoneSetting()}}</a>
                     </p>
                     <p>
                         website: <a href="http://ygm.com.vn">ygm.com.vn</a>
