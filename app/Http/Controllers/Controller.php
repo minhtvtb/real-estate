@@ -16,6 +16,6 @@ class Controller extends BaseController
      */
     function __construct()
     {
-        dd(\App\Entities\SetupInfo::all());
+        dd(\App\Entities\SetupInfo::all()->where('key', 'phone'));
     }
 }
